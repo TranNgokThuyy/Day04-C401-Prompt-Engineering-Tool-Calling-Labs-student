@@ -1,0 +1,309 @@
+{
+  "transcript_id": "streamlit_v3_openrouter_20260602T160944486547",
+  "version": "v3",
+  "artifact_version": "v3+peb1c8179815b+t72256b6a6dde",
+  "prompt_hash": "eb1c8179815bd79d34de7d326420bb99b3072e6e8ae96464c02d4411f905fc68",
+  "tools_hash": "72256b6a6dde2c99a431450b9af309a4ed3c926d1684afa3d068cf59286d731e",
+  "provider": "openrouter",
+  "model": null,
+  "system_prompt": "C:\\Users\\Admin\\Desktop\\lab4\\Day04-C401-Prompt-Engineering-Tool-Calling-Labs-student\\starter_v0\\artifacts\\system_prompt.md",
+  "tools": "C:\\Users\\Admin\\Desktop\\lab4\\Day04-C401-Prompt-Engineering-Tool-Calling-Labs-student\\starter_v0\\artifacts\\tools.yaml",
+  "history_window": 5,
+  "max_tool_rounds": 4,
+  "created_at": "2026-06-02T16:09:44",
+  "updated_at": "2026-06-02T16:09:44",
+  "turns": [
+    {
+      "turn_index": 2,
+      "started_at": "2026-06-02T16:09:44",
+      "user": "Tìm thông tin về ronaldo",
+      "status": "answered",
+      "assistant_text": "Here are some recent updates about Cristiano Ronaldo:\n\n### Recent Articles and Videos\n1. **20 Legendary Goals by Cristiano Ronaldo for Juventus**: A YouTube video showcasing some of Ronaldo's best goals during his time at Juventus. [Watch it here](https://www.youtube.com/watch?v=G8dAO8rSWqM) (Source: youtube.com).\n\n2. **The Big Game Nightmare**: A cinematic edit exploring Ronaldo's most impactful performances in crucial matches. [Watch it here](https://www.youtube.com/watch?v=oNMgYz9KTXM) (Source: youtube.com).\n\n3. **Ronaldo's Speech Before a Title-Winning Match**: A Reddit post discussing Ronaldo's speech before a significant match. [Read more here](https://www.reddit.com/r/soccer/comments/1tu5dxs/ronaldos_speech_before_the_title_winning_match) (Source: reddit.com).\n\n4. **Every Goal from the 2022 FIFA World Cup**: A video featuring all goals scored by Ronaldo and the Portuguese team during the World Cup. [Watch it here](https://www.youtube.com/watch?v=Cm-ON6bYoHk) (Source: youtube.com).\n\n5. **Fixed it, @k.mbappe**: A Facebook video featuring a humorous take involving Ronaldo and Kylian Mbappé. [Check it out here](https://www.facebook.com/Cristiano/videos/fixed-it-kmbappe-/1177553367842397) (Source: facebook.com).\n\n### Recent Tweets from Cristiano Ronaldo\n1. **Mission Mundial**: \"Começa a Missão Mundial! 🇵🇹\" [View Tweet](https://x.com/Cristiano/status/2061522452627259422) (Date: June 1, 2026).\n\n2. **Family Time**: \"Feliz por voltar a casa com a família 🙌🏽🇵🇹\" [View Tweet](https://x.com/Cristiano/status/2061139750380007649) (Date: May 31, 2026).\n\n3. **Fuel Like Me**: Promoting his Strawberry S7riker shake with Herbalife. [View Tweet](https://x.com/Cristiano/status/2060677859346092127) (Date: May 30, 2026).\n\n4. **WHOOP Collaboration**: Promoting custom CR7 SportFlex bands. [View Tweet](https://x.com/Cristiano/status/2059971400375345582) (Date: May 28, 2026).\n\n5. **Performance Data**: Sharing WHOOP data after a match. [View Tweet](https://x.com/Cristiano/status/2059244823157068046) (Date: May 26, 2026).\n\nIf you need more specific information or details, let me know!",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "lookup",
+              "args": {
+                "query": "Cristiano Ronaldo",
+                "topic": "general",
+                "timeframe": "week",
+                "max_results": 5
+              }
+            },
+            {
+              "name": "timeline",
+              "args": {
+                "screenname": "Cristiano",
+                "limit": 5
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "lookup",
+              "args": {
+                "query": "Cristiano Ronaldo",
+                "topic": "general",
+                "timeframe": "week",
+                "max_results": 5
+              },
+              "result": {
+                "tool": "web_search",
+                "query": "Cristiano Ronaldo",
+                "topic": "general",
+                "timeframe": "week",
+                "items": [
+                  {
+                    "title": "20 Legendary Goals by Cristiano Ronaldo for Juventus",
+                    "url": "https://www.youtube.com/watch?v=G8dAO8rSWqM",
+                    "source": "youtube.com",
+                    "summary": "15 Times Cristiano Ronaldo Shocked The World! Pitch Project · 1.2M views ; Most Expensive Brazil XI · New. 65K views ; 12 Times Cristiano Ronaldo SHOCKED The World.",
+                    "score": 0.89029425
+                  },
+                  {
+                    "title": "HE WHO DECIDES: THE BIG GAME NIGHTMARE | Cristiano Ronaldo",
+                    "url": "https://www.youtube.com/watch?v=oNMgYz9KTXM",
+                    "source": "youtube.com",
+                    "summary": "HE WHO DECIDES: THE BIG GAME NIGHTMARE | Cristiano Ronaldo\nAedits\n105000 subscribers\n361 likes\n2139 views\n29 May 2026\nThe ultimate big-game player. Watch Cristiano Ronaldo become a nightmare for Europe's elite in Part 2 of the \"He Who Decides\" series: THE BIG GAME NIGHTMARE. 🎬😈\n\nFollowing \"The Clutch Entity,\" this cinematic edit explores CR7's most ruthless performances on the biggest stages in world football. 🌍⚽ From his Champions League dominance with Manchester United and Real Madrid to carrying Juventus and the Portuguese National Team, witness the true definition of a clutch king. 🐐🔥\n\n🍿 Watch Part 1 (\"He Who Scores: The Clutch Entity\") here: https://youtu.be/wmuxh_BqhxQ\n\nIf you enjoyed this cinematic CR7 edit, make sure to LIKE, SUBSCRIBE, and turn on notifications because the epic conclusion is on the way—Part 3: THE SOLO WARRIOR is coming soon! 👍🔔\n\nWho is your favorite version of Ronaldo? Let me know in the comments. 🗣️👇\n\n🕒 CHAPTERS & MATCH DETAILS:\n\n0:00 - INTRO 🎬\n\n🔴 Chapter 1: The Manchester United Era 🏴󠁧󠁢󠁥󠁮󠁧󠁿\n1:22 - 2009 | Vs Porto (Champions League Quarter Final) 🚀\n2:02 - 2009 | Vs Arsenal (Champions League Semi Final) ⚡\n3:01 - 2008 | Vs Chelsea (Champions League Final) 🏆\n\n⚪ Chapter 2: The Real Madrid Era 🇪🇸\n3:55 - 2011 | Vs Barcelona (Copa del Rey Final) ⚔️\n4:33 - 2014 | Vs Bayern Munich (Champions League Semi Final) 🔥\n5:23 - 2018 | Vs Juventus (Champions League Quarter Final) 🚲\n6:30 - 2017 | Vs Juventus (Champions League Final) 👑\n\n⚫ Chapter 3: The Juventus Era 🇮🇹\n7:37 - 2019 | Vs Ajax (Champions League Quarter Final) ✈️\n8:31 - 2020 | Vs Lyon (Champions League Round of 16) 💥\n9:10 - 2020 | Vs Napoli (Supercoppa Italiana Final) 🛡️\n9:28 - 2019 | Vs AC Milan (Supercoppa Italiana Final) 🏆\n\n🟢 Chapter 4: The Portugal Era 🇵🇹\n10:15 - 2012 | Vs Netherlands (UEFA EURO Group Stage) 🌪️\n10:52 - 2012 | Vs Czech Republic (UEFA EURO Quarter Final) 🎯\n11:44 - 2016 | Vs Wales (UEFA EURO Semi Final) 🛫\n12:20 - 2025 | Vs Spain (UEFA Nations League Final) 🥇\n\n#CristianoRonaldo #CR7 #FootballEdit #ChampionsLeague #RealMadrid #ManchesterUnited #Juventus #Portugal #TheSoloWarrior\n27 comments\n",
+                    "score": 0.87663436
+                  },
+                  {
+                    "title": "Ronaldo's speech before the title winning match against ...",
+                    "url": "https://www.reddit.com/r/soccer/comments/1tu5dxs/ronaldos_speech_before_the_title_winning_match",
+                    "source": "reddit.com",
+                    "summary": "Cristiano Ronaldo NO se quedó en la cancha para recibir la medalla de subcampeón y para reconocer al Gamba Osaka como los ganadores de la Champions League Two",
+                    "score": 0.7025301
+                  },
+                  {
+                    "title": "Fixed it, @k.mbappe | Cristiano Ronaldo",
+                    "url": "https://www.facebook.com/Cristiano/videos/fixed-it-kmbappe-/1177553367842397",
+                    "source": "facebook.com",
+                    "summary": "La fille madrilène il arrive dans la maison de Mbappé pendant que ce dernier est sous la douche. Il essaie de se jouer les maîtres de la maison et sa grande",
+                    "score": 0.6584175
+                  },
+                  {
+                    "title": "Ronaldo, Ramos & Portugal | Every Goal | 2022 FIFA World Cup",
+                    "url": "https://www.youtube.com/watch?v=Cm-ON6bYoHk",
+                    "source": "youtube.com",
+                    "summary": "Ronaldo, Ramos & Portugal | Every Goal | 2022 FIFA World Cup\nFIFA\n25500000 subscribers\n269 likes\n8504 views\n1 Jun 2026\nWatch the fluid passing and clinical finishing of Portugal at the 2022 FIFA World Cup, featuring every goal from Cristiano Ronaldo, Goncalo Ramos, Pepe, Bruno Fernandes and more. #worldcup #portugal #goncaloramos #pepe #brunofernandes \n\nFOLLOW FIFA’S TOURNAMENT CHANNELS BELOW! \n\nFIFA World Cup:\n👉 https://www.instagram.com/fifaworldcup\n👉 https://twitter.com/FIFAWorldCup\n👉 https://www.facebook.com/fifaworldcup\n👉 https://www.tiktok.com/@fifaworldcup\n👉 https://www.threads.com/@fifaworldcup\n👉 https://whatsapp.com/channel/0029Vb78sHK30LKMhYZAwQ3i\n\nFIFA Women’s World Cup: \n👉 https://www.instagram.com/fifawomensworldcup\n👉 https://twitter.com/FIFAWWC\n👉 https://www.facebook.com/fifawomensworldcup\n👉 https://www.tiktok.com/@fifawomensworldcup\n👉 https://www.threads.com/@fifawomensworldcup\n👉 https://whatsapp.com/channel/0029VbBedar4yltLthnZzT16\n\nFIFA Club Football:\n👉 https://www.instagram.com/fifaclubfootball/\n👉 https://twitter.com/FIFACF\n👉 https://www.facebook.com/fifaclubfootball\n👉 https://www.tiktok.com/@fifaclubfootball\n👉 https://www.threads.com/@fifaclubfootball\n👉 https://whatsapp.com/channel/0029Vb8ijen6GcG8v4EXmW25\n22 comments\n",
+                    "score": 0.39606816
+                  }
+                ]
+              }
+            },
+            {
+              "tool": "timeline",
+              "args": {
+                "screenname": "Cristiano",
+                "limit": 5
+              },
+              "result": {
+                "tool": "get_user_tweets",
+                "screenname": "Cristiano",
+                "items": [
+                  {
+                    "title": "Começa a Missão Mundial! 🇵🇹 https://t.co/wrqGTyuzsC",
+                    "summary": "Começa a Missão Mundial! 🇵🇹 https://t.co/wrqGTyuzsC",
+                    "url": "https://x.com/Cristiano/status/2061522452627259422",
+                    "source": "@Cristiano",
+                    "date": "Mon Jun 01 18:57:08 +0000 2026",
+                    "metrics": {
+                      "favorites": 573788,
+                      "retweets": 34846,
+                      "views": "12065342"
+                    }
+                  },
+                  {
+                    "title": "Feliz por voltar a casa com a família 🙌🏽🇵🇹 https://t.co/6HWJO0J9Iy",
+                    "summary": "Feliz por voltar a casa com a família 🙌🏽🇵🇹 https://t.co/6HWJO0J9Iy",
+                    "url": "https://x.com/Cristiano/status/2061139750380007649",
+                    "source": "@Cristiano",
+                    "date": "Sun May 31 17:36:25 +0000 2026",
+                    "metrics": {
+                      "favorites": 998389,
+                      "retweets": 39672,
+                      "views": "31015067"
+                    }
+                  },
+                  {
+                    "title": "Fuel like me. ",
+                    "summary": "Fuel like me. \n\nTry my Strawberry S7riker shake with @Herbalife24 Formula 1 Sport.\n\nAlways be ready ⚽ Start your routine: https://t.co/KsL71iD2dJ\n\n#FuelLikeRonaldo #Ad https://t.co/srTVKNCCtx",
+                    "url": "https://x.com/Cristiano/status/2060677859346092127",
+                    "source": "@Cristiano",
+                    "date": "Sat May 30 11:01:01 +0000 2026",
+                    "metrics": {
+                      "favorites": 137890,
+                      "retweets": 11089,
+                      "views": "18411786"
+                    }
+                  },
+                  {
+                    "title": "RT @WHOOP: Get the look of a legend @cristiano. The latest custom CR7 SportFlex bands are here, available in Home 🔴 and ",
+                    "summary": "RT @WHOOP: Get the look of a legend @cristiano. The latest custom CR7 SportFlex bands are here, available in Home 🔴 and Away ⚪.\n\nShop Here:…",
+                    "url": "https://x.com/Cristiano/status/2059971400375345582",
+                    "source": "@Cristiano",
+                    "date": "Thu May 28 12:13:48 +0000 2026",
+                    "metrics": {
+                      "favorites": 0,
+                      "retweets": 558,
+                      "views": "806"
+                    }
+                  },
+                  {
+                    "title": "RT @WHOOP: 177 BPM after @cristiano’s second goal.",
+                    "summary": "RT @WHOOP: 177 BPM after @cristiano’s second goal.\n154 BPM when Al-Nasssr officially won and clinched the league. \n\nCR7’s WHOOP data captur…",
+                    "url": "https://x.com/Cristiano/status/2059244823157068046",
+                    "source": "@Cristiano",
+                    "date": "Tue May 26 12:06:39 +0000 2026",
+                    "metrics": {
+                      "favorites": 0,
+                      "retweets": 971,
+                      "views": "899"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": "Here are some recent updates about Cristiano Ronaldo:\n\n### Recent Articles and Videos\n1. **20 Legendary Goals by Cristiano Ronaldo for Juventus**: A YouTube video showcasing some of Ronaldo's best goals during his time at Juventus. [Watch it here](https://www.youtube.com/watch?v=G8dAO8rSWqM) (Source: youtube.com).\n\n2. **The Big Game Nightmare**: A cinematic edit exploring Ronaldo's most impactful performances in crucial matches. [Watch it here](https://www.youtube.com/watch?v=oNMgYz9KTXM) (Source: youtube.com).\n\n3. **Ronaldo's Speech Before a Title-Winning Match**: A Reddit post discussing Ronaldo's speech before a significant match. [Read more here](https://www.reddit.com/r/soccer/comments/1tu5dxs/ronaldos_speech_before_the_title_winning_match) (Source: reddit.com).\n\n4. **Every Goal from the 2022 FIFA World Cup**: A video featuring all goals scored by Ronaldo and the Portuguese team during the World Cup. [Watch it here](https://www.youtube.com/watch?v=Cm-ON6bYoHk) (Source: youtube.com).\n\n5. **Fixed it, @k.mbappe**: A Facebook video featuring a humorous take involving Ronaldo and Kylian Mbappé. [Check it out here](https://www.facebook.com/Cristiano/videos/fixed-it-kmbappe-/1177553367842397) (Source: facebook.com).\n\n### Recent Tweets from Cristiano Ronaldo\n1. **Mission Mundial**: \"Começa a Missão Mundial! 🇵🇹\" [View Tweet](https://x.com/Cristiano/status/2061522452627259422) (Date: June 1, 2026).\n\n2. **Family Time**: \"Feliz por voltar a casa com a família 🙌🏽🇵🇹\" [View Tweet](https://x.com/Cristiano/status/2061139750380007649) (Date: May 31, 2026).\n\n3. **Fuel Like Me**: Promoting his Strawberry S7riker shake with Herbalife. [View Tweet](https://x.com/Cristiano/status/2060677859346092127) (Date: May 30, 2026).\n\n4. **WHOOP Collaboration**: Promoting custom CR7 SportFlex bands. [View Tweet](https://x.com/Cristiano/status/2059971400375345582) (Date: May 28, 2026).\n\n5. **Performance Data**: Sharing WHOOP data after a match. [View Tweet](https://x.com/Cristiano/status/2059244823157068046) (Date: May 26, 2026).\n\nIf you need more specific information or details, let me know!",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "lookup",
+          "args": {
+            "query": "Cristiano Ronaldo",
+            "topic": "general",
+            "timeframe": "week",
+            "max_results": 5
+          },
+          "result": {
+            "tool": "web_search",
+            "query": "Cristiano Ronaldo",
+            "topic": "general",
+            "timeframe": "week",
+            "items": [
+              {
+                "title": "20 Legendary Goals by Cristiano Ronaldo for Juventus",
+                "url": "https://www.youtube.com/watch?v=G8dAO8rSWqM",
+                "source": "youtube.com",
+                "summary": "15 Times Cristiano Ronaldo Shocked The World! Pitch Project · 1.2M views ; Most Expensive Brazil XI · New. 65K views ; 12 Times Cristiano Ronaldo SHOCKED The World.",
+                "score": 0.89029425
+              },
+              {
+                "title": "HE WHO DECIDES: THE BIG GAME NIGHTMARE | Cristiano Ronaldo",
+                "url": "https://www.youtube.com/watch?v=oNMgYz9KTXM",
+                "source": "youtube.com",
+                "summary": "HE WHO DECIDES: THE BIG GAME NIGHTMARE | Cristiano Ronaldo\nAedits\n105000 subscribers\n361 likes\n2139 views\n29 May 2026\nThe ultimate big-game player. Watch Cristiano Ronaldo become a nightmare for Europe's elite in Part 2 of the \"He Who Decides\" series: THE BIG GAME NIGHTMARE. 🎬😈\n\nFollowing \"The Clutch Entity,\" this cinematic edit explores CR7's most ruthless performances on the biggest stages in world football. 🌍⚽ From his Champions League dominance with Manchester United and Real Madrid to carrying Juventus and the Portuguese National Team, witness the true definition of a clutch king. 🐐🔥\n\n🍿 Watch Part 1 (\"He Who Scores: The Clutch Entity\") here: https://youtu.be/wmuxh_BqhxQ\n\nIf you enjoyed this cinematic CR7 edit, make sure to LIKE, SUBSCRIBE, and turn on notifications because the epic conclusion is on the way—Part 3: THE SOLO WARRIOR is coming soon! 👍🔔\n\nWho is your favorite version of Ronaldo? Let me know in the comments. 🗣️👇\n\n🕒 CHAPTERS & MATCH DETAILS:\n\n0:00 - INTRO 🎬\n\n🔴 Chapter 1: The Manchester United Era 🏴󠁧󠁢󠁥󠁮󠁧󠁿\n1:22 - 2009 | Vs Porto (Champions League Quarter Final) 🚀\n2:02 - 2009 | Vs Arsenal (Champions League Semi Final) ⚡\n3:01 - 2008 | Vs Chelsea (Champions League Final) 🏆\n\n⚪ Chapter 2: The Real Madrid Era 🇪🇸\n3:55 - 2011 | Vs Barcelona (Copa del Rey Final) ⚔️\n4:33 - 2014 | Vs Bayern Munich (Champions League Semi Final) 🔥\n5:23 - 2018 | Vs Juventus (Champions League Quarter Final) 🚲\n6:30 - 2017 | Vs Juventus (Champions League Final) 👑\n\n⚫ Chapter 3: The Juventus Era 🇮🇹\n7:37 - 2019 | Vs Ajax (Champions League Quarter Final) ✈️\n8:31 - 2020 | Vs Lyon (Champions League Round of 16) 💥\n9:10 - 2020 | Vs Napoli (Supercoppa Italiana Final) 🛡️\n9:28 - 2019 | Vs AC Milan (Supercoppa Italiana Final) 🏆\n\n🟢 Chapter 4: The Portugal Era 🇵🇹\n10:15 - 2012 | Vs Netherlands (UEFA EURO Group Stage) 🌪️\n10:52 - 2012 | Vs Czech Republic (UEFA EURO Quarter Final) 🎯\n11:44 - 2016 | Vs Wales (UEFA EURO Semi Final) 🛫\n12:20 - 2025 | Vs Spain (UEFA Nations League Final) 🥇\n\n#CristianoRonaldo #CR7 #FootballEdit #ChampionsLeague #RealMadrid #ManchesterUnited #Juventus #Portugal #TheSoloWarrior\n27 comments\n",
+                "score": 0.87663436
+              },
+              {
+                "title": "Ronaldo's speech before the title winning match against ...",
+                "url": "https://www.reddit.com/r/soccer/comments/1tu5dxs/ronaldos_speech_before_the_title_winning_match",
+                "source": "reddit.com",
+                "summary": "Cristiano Ronaldo NO se quedó en la cancha para recibir la medalla de subcampeón y para reconocer al Gamba Osaka como los ganadores de la Champions League Two",
+                "score": 0.7025301
+              },
+              {
+                "title": "Fixed it, @k.mbappe | Cristiano Ronaldo",
+                "url": "https://www.facebook.com/Cristiano/videos/fixed-it-kmbappe-/1177553367842397",
+                "source": "facebook.com",
+                "summary": "La fille madrilène il arrive dans la maison de Mbappé pendant que ce dernier est sous la douche. Il essaie de se jouer les maîtres de la maison et sa grande",
+                "score": 0.6584175
+              },
+              {
+                "title": "Ronaldo, Ramos & Portugal | Every Goal | 2022 FIFA World Cup",
+                "url": "https://www.youtube.com/watch?v=Cm-ON6bYoHk",
+                "source": "youtube.com",
+                "summary": "Ronaldo, Ramos & Portugal | Every Goal | 2022 FIFA World Cup\nFIFA\n25500000 subscribers\n269 likes\n8504 views\n1 Jun 2026\nWatch the fluid passing and clinical finishing of Portugal at the 2022 FIFA World Cup, featuring every goal from Cristiano Ronaldo, Goncalo Ramos, Pepe, Bruno Fernandes and more. #worldcup #portugal #goncaloramos #pepe #brunofernandes \n\nFOLLOW FIFA’S TOURNAMENT CHANNELS BELOW! \n\nFIFA World Cup:\n👉 https://www.instagram.com/fifaworldcup\n👉 https://twitter.com/FIFAWorldCup\n👉 https://www.facebook.com/fifaworldcup\n👉 https://www.tiktok.com/@fifaworldcup\n👉 https://www.threads.com/@fifaworldcup\n👉 https://whatsapp.com/channel/0029Vb78sHK30LKMhYZAwQ3i\n\nFIFA Women’s World Cup: \n👉 https://www.instagram.com/fifawomensworldcup\n👉 https://twitter.com/FIFAWWC\n👉 https://www.facebook.com/fifawomensworldcup\n👉 https://www.tiktok.com/@fifawomensworldcup\n👉 https://www.threads.com/@fifawomensworldcup\n👉 https://whatsapp.com/channel/0029VbBedar4yltLthnZzT16\n\nFIFA Club Football:\n👉 https://www.instagram.com/fifaclubfootball/\n👉 https://twitter.com/FIFACF\n👉 https://www.facebook.com/fifaclubfootball\n👉 https://www.tiktok.com/@fifaclubfootball\n👉 https://www.threads.com/@fifaclubfootball\n👉 https://whatsapp.com/channel/0029Vb8ijen6GcG8v4EXmW25\n22 comments\n",
+                "score": 0.39606816
+              }
+            ]
+          }
+        },
+        {
+          "tool": "timeline",
+          "args": {
+            "screenname": "Cristiano",
+            "limit": 5
+          },
+          "result": {
+            "tool": "get_user_tweets",
+            "screenname": "Cristiano",
+            "items": [
+              {
+                "title": "Começa a Missão Mundial! 🇵🇹 https://t.co/wrqGTyuzsC",
+                "summary": "Começa a Missão Mundial! 🇵🇹 https://t.co/wrqGTyuzsC",
+                "url": "https://x.com/Cristiano/status/2061522452627259422",
+                "source": "@Cristiano",
+                "date": "Mon Jun 01 18:57:08 +0000 2026",
+                "metrics": {
+                  "favorites": 573788,
+                  "retweets": 34846,
+                  "views": "12065342"
+                }
+              },
+              {
+                "title": "Feliz por voltar a casa com a família 🙌🏽🇵🇹 https://t.co/6HWJO0J9Iy",
+                "summary": "Feliz por voltar a casa com a família 🙌🏽🇵🇹 https://t.co/6HWJO0J9Iy",
+                "url": "https://x.com/Cristiano/status/2061139750380007649",
+                "source": "@Cristiano",
+                "date": "Sun May 31 17:36:25 +0000 2026",
+                "metrics": {
+                  "favorites": 998389,
+                  "retweets": 39672,
+                  "views": "31015067"
+                }
+              },
+              {
+                "title": "Fuel like me. ",
+                "summary": "Fuel like me. \n\nTry my Strawberry S7riker shake with @Herbalife24 Formula 1 Sport.\n\nAlways be ready ⚽ Start your routine: https://t.co/KsL71iD2dJ\n\n#FuelLikeRonaldo #Ad https://t.co/srTVKNCCtx",
+                "url": "https://x.com/Cristiano/status/2060677859346092127",
+                "source": "@Cristiano",
+                "date": "Sat May 30 11:01:01 +0000 2026",
+                "metrics": {
+                  "favorites": 137890,
+                  "retweets": 11089,
+                  "views": "18411786"
+                }
+              },
+              {
+                "title": "RT @WHOOP: Get the look of a legend @cristiano. The latest custom CR7 SportFlex bands are here, available in Home 🔴 and ",
+                "summary": "RT @WHOOP: Get the look of a legend @cristiano. The latest custom CR7 SportFlex bands are here, available in Home 🔴 and Away ⚪.\n\nShop Here:…",
+                "url": "https://x.com/Cristiano/status/2059971400375345582",
+                "source": "@Cristiano",
+                "date": "Thu May 28 12:13:48 +0000 2026",
+                "metrics": {
+                  "favorites": 0,
+                  "retweets": 558,
+                  "views": "806"
+                }
+              },
+              {
+                "title": "RT @WHOOP: 177 BPM after @cristiano’s second goal.",
+                "summary": "RT @WHOOP: 177 BPM after @cristiano’s second goal.\n154 BPM when Al-Nasssr officially won and clinched the league. \n\nCR7’s WHOOP data captur…",
+                "url": "https://x.com/Cristiano/status/2059244823157068046",
+                "source": "@Cristiano",
+                "date": "Tue May 26 12:06:39 +0000 2026",
+                "metrics": {
+                  "favorites": 0,
+                  "retweets": 971,
+                  "views": "899"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "ended_at": "2026-06-02T16:09:44"
+    }
+  ]
+}

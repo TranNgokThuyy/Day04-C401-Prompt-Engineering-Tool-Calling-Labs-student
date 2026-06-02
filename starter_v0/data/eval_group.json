@@ -1,7 +1,252 @@
 {
-  "dataset_id": "day04_v2_research_group",
-  "dataset_role": "group",
-  "description": "Case do NHÓM tự viết thêm để cover thêm trường hợp. Mỗi case cần: id, phase='B', query HOẶC turns, failure_type (thuộc allowed_failure_types), và expect (tool_calls[...] hoặc no_tool=true). Nên kèm metadata.what_it_tests.",
-  "allowed_failure_types": ["wrong_tool", "wrong_arg_value", "wrong_boundary", "unnecessary_tool", "out_of_scope", "missing_info"],
-  "cases": []
+  "cases": [
+    {
+      "id": "G01_latest_openai_news",
+      "phase": "B",
+      "query": "Tin OpenAI trong 24 giờ qua",
+      "failure_type": "wrong_arg_value",
+      "expect": {
+        "tool_calls": [
+          {
+            "name": "lookup",
+            "args": {
+              "query": "OpenAI",
+              "topic": "news",
+              "timeframe": "day"
+            }
+          }
+        ]
+      },
+      "metadata": {
+        "what_it_tests": "24 giờ qua phải map thành timeframe=day."
+      }
+    },
+
+    {
+      "id": "G02_latest_posts_about_claude",
+      "phase": "B",
+      "query": "Tìm các tweet mới nhất về Claude AI",
+      "failure_type": "wrong_arg_value",
+      "expect": {
+        "tool_calls": [
+          {
+            "name": "social_search",
+            "args": {
+              "search_type": "Latest"
+            }
+          }
+        ]
+      },
+      "metadata": {
+        "what_it_tests": "Mặc định bài mới nhất => Latest."
+      }
+    },
+
+{
+  "id": "G03_fetch_specific_url",
+  "phase": "B",
+  "query": "Đọc nội dung trang này: https://example.com",
+  "failure_type": "wrong_tool",
+  "expect": {
+    "tool_calls": [
+      {
+        "name": "fetch",
+        "args": {
+          "url": "https://example.com"
+        }
+      }
+    ]
+  },
+  "metadata": {
+    "what_it_tests": "Có URL cụ thể thì dùng fetch."
+  }
+},
+
+    {
+      "id": "G04_missing_person_for_timeline",
+      "phase": "B",
+      "query": "Lấy 20 tweet gần nhất giúp mình",
+      "failure_type": "missing_info",
+      "expect": {
+        "tool_calls": [
+          {
+            "name": "clarify",
+            "args": {
+              "response_type": "text"
+            }
+          }
+        ]
+      },
+      "metadata": {
+        "what_it_tests": "Thiếu tài khoản cần hỏi lại."
+      }
+    },
+
+    {
+      "id": "G05_no_tool_greeting",
+      "phase": "B",
+      "query": "Xin chào, bạn có thể giúp gì cho tôi?",
+      "failure_type": "unnecessary_tool",
+      "expect": {
+        "no_tool": true
+      },
+      "metadata": {
+        "what_it_tests": "Greeting không cần tool."
+      }
+    },
+
+    {
+      "id": "G06_multiturn_limit_correction",
+      "phase": "B",
+      "turns": [
+        {
+          "role": "user",
+          "content": "Lấy tweet của Sam Altman"
+        },
+        {
+          "role": "user",
+          "content": "Lấy 7 tweet thôi"
+        }
+      ],
+      "failure_type": "wrong_arg_value",
+      "expect": {
+        "tool_calls": [
+          {
+            "name": "timeline",
+            "args": {
+              "screenname": "sama",
+              "limit": 7
+            }
+          }
+        ]
+      },
+      "metadata": {
+        "what_it_tests": "Carry user và cập nhật limit."
+      }
+    },
+
+    {
+      "id": "G07_multiturn_switch_topic",
+      "phase": "B",
+      "turns": [
+        {
+          "role": "user",
+          "content": "Tin AI hôm nay"
+        },
+        {
+          "role": "user",
+          "content": "Không, ý mình là tin về NVIDIA"
+        }
+      ],
+      "failure_type": "wrong_arg_value",
+      "expect": {
+        "tool_calls": [
+          {
+            "name": "lookup",
+            "args": {
+              "query": "NVIDIA",
+              "topic": "news",
+              "timeframe": "day"
+            }
+          }
+        ]
+      },
+      "metadata": {
+        "what_it_tests": "Sửa query nhưng giữ timeframe."
+      }
+    },
+
+    {
+      "id": "G08_multiturn_url_after_clarify",
+      "phase": "B",
+      "turns": [
+        {
+          "role": "user",
+          "content": "Tóm tắt bài viết này"
+        },
+        {
+          "role": "user",
+          "content": "https://openai.com/news"
+        }
+      ],
+      "failure_type": "missing_info",
+      "expect": {
+        "tool_calls": [
+          {
+            "name": "fetch",
+            "args": {
+              "url": "https://openai.com/news"
+            }
+          }
+        ]
+      },
+      "metadata": {
+        "what_it_tests": "Sau khi được cung cấp URL phải chuyển sang fetch."
+      }
+    },
+
+    {
+      "id": "G09_multiturn_parallel_sources",
+      "phase": "B",
+      "turns": [
+        {
+          "role": "user",
+          "content": "Tìm tin về Gemini"
+        },
+        {
+          "role": "user",
+          "content": "Và tìm luôn tweet về Gemini"
+        }
+      ],
+      "failure_type": "wrong_tool",
+      "expect": {
+        "tool_calls": [
+          {
+            "name": "lookup",
+            "args": {
+              "query": "Gemini"
+            }
+          },
+          {
+            "name": "social_search",
+            "args": {
+              "query": "Gemini"
+            }
+          }
+        ]
+      },
+      "metadata": {
+        "what_it_tests": "Một yêu cầu cần gọi nhiều tool."
+      }
+    },
+
+    {
+      "id": "G10_multiturn_confirm_send",
+      "phase": "B",
+      "turns": [
+        {
+          "role": "user",
+          "content": "Đăng bản tin AI lên Telegram giúp mình"
+        },
+        {
+          "role": "user",
+          "content": "Nội dung lấy từ bản tóm tắt vừa rồi"
+        }
+      ],
+      "failure_type": "wrong_boundary",
+      "expect": {
+        "tool_calls": [
+          {
+            "name": "clarify",
+            "args": {
+              "response_type": "yes_no"
+            }
+          }
+        ]
+      },
+      "metadata": {
+        "what_it_tests": "Luôn yêu cầu xác nhận trước khi gửi."
+      }
+    }
+  ]
 }

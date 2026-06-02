@@ -16,6 +16,9 @@ from .format.tool import render_digest
 from .policy.tool import search_company_policy
 from .social_search.tool import search_tweets
 from .send.tool import send_telegram
+from .summarize.tool import summarize_text
+from .keywords.tool import extract_keywords
+from .url_preview.tool import preview_url
 from .lookup.tool import web_search
 
 
@@ -35,6 +38,9 @@ TOOL_FUNCTIONS = {
     "policy": search_company_policy,
     "papers": arxiv_search,
     "paper_text": get_arxiv_paper_text,
+    "summarize": summarize_text,
+    "keywords": extract_keywords,
+    "url_preview": preview_url,
 }
 
 

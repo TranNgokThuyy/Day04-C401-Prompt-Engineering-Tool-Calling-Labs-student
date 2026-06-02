@@ -106,6 +106,23 @@ pip install -r requirements.txt
 cp .env.example .env
 ```
 
+Mới trong phiên bản này:
+- Thêm 3 tool mới: `summarize`, `keywords`, `url_preview`.
+- Thêm UI Streamlit để chạy agent trên trình duyệt và dễ gom transcript.
+
+Nếu bạn muốn mở UI: 
+
+```bash
+cd starter_v0
+streamlit run streamlit_app.py -- --provider openrouter --version v3
+```
+
+Mở `http://localhost:8501` để sử dụng. Nếu muốn public qua Cloudflared:
+
+```bash
+cloudflared tunnel --url http://localhost:8501
+```
+
 Fill `.env`. Minimum recommended:
 
 ```bash
