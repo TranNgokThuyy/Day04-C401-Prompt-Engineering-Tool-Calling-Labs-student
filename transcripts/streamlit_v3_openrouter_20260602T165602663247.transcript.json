@@ -1,0 +1,659 @@
+{
+  "transcript_id": "streamlit_v3_openrouter_20260602T165602663247",
+  "version": "v3",
+  "artifact_version": "v3+peb1c8179815b+t72256b6a6dde",
+  "prompt_hash": "eb1c8179815bd79d34de7d326420bb99b3072e6e8ae96464c02d4411f905fc68",
+  "tools_hash": "72256b6a6dde2c99a431450b9af309a4ed3c926d1684afa3d068cf59286d731e",
+  "provider": "openrouter",
+  "model": null,
+  "system_prompt": "C:\\Users\\Admin\\Desktop\\lab4\\Day04-C401-Prompt-Engineering-Tool-Calling-Labs-student\\starter_v0\\artifacts\\system_prompt.md",
+  "tools": "C:\\Users\\Admin\\Desktop\\lab4\\Day04-C401-Prompt-Engineering-Tool-Calling-Labs-student\\starter_v0\\artifacts\\tools.yaml",
+  "history_window": 5,
+  "max_tool_rounds": 4,
+  "created_at": "2026-06-02T16:56:02",
+  "updated_at": "2026-06-02T16:56:02",
+  "turns": [
+    {
+      "turn_index": 2,
+      "started_at": "2026-06-02T16:56:02",
+      "user": "Tìm cho tôi paper về promt, tóm tắt lại nó và lưu thành file json",
+      "status": "max_tool_rounds",
+      "assistant_text": "Stopped after 4 tool rounds. Inspect the transcript for details.",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "papers",
+              "args": {
+                "query": "prompt",
+                "max_results": 5
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "papers",
+              "args": {
+                "query": "prompt",
+                "max_results": 5
+              },
+              "result": {
+                "tool": "arxiv_search",
+                "query": "prompt",
+                "api_query": "all:prompt",
+                "total_results": 40591,
+                "items": [
+                  {
+                    "arxiv_id": "2402.02382v3",
+                    "title": "Revisiting the Power of Prompt for Visual Tuning",
+                    "summary": "Visual prompt tuning (VPT) is a promising solution incorporating learnable prompt tokens to customize pre-trained models for downstream tasks. However, VPT and its variants often encounter challenges like prompt initialization, prompt length, and subpar performance in self-supervised pretraining, hindering successful contextual adaptation. This study commences by exploring the correlation evolvement between prompts and patch tokens during proficient training. Inspired by the observation that the prompt tokens tend to share high mutual information with patch tokens, we propose initializing prompts with downstream token prototypes. The strategic initialization, a stand-in for the previous initialization, substantially improves performance in fine-tuning. To refine further, we optimize token construction with a streamlined pipeline that maintains excellent performance with almost no increase in computational expenses compared to VPT. Exhaustive experiments show our proposed approach outperforms existing methods by a remarkable margin. For instance, it surpasses full fine-tuning in 19 out of 24 tasks, using less than 0.4% of learnable parameters on the FGVC and VTAB-1K benchmarks. Notably, our method significantly advances the adaptation for self-supervised pretraining, achieving impressive task performance gains of at least 10% to 30%. Besides, the experimental results demonstrate the proposed SPT is robust to prompt lengths and scales well with model capacity and training data size. We finally provide an insightful exploration into the amount of target data facilitating the adaptation of pre-trained models to downstream tasks. The code is available at https://github.com/WangYZ1608/Self-Prompt-Tuning.",
+                    "authors": [
+                      "Yuzhu Wang",
+                      "Lechao Cheng",
+                      "Chaowei Fang",
+                      "Dingwen Zhang",
+                      "Manni Duan",
+                      "Meng Wang"
+                    ],
+                    "published": "2024-02-04T07:49:02Z",
+                    "updated": "2024-05-27T06:51:07Z",
+                    "url": "http://arxiv.org/abs/2402.02382v3",
+                    "pdf_url": "https://arxiv.org/pdf/2402.02382v3",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.CV",
+                    "categories": [
+                      "cs.CV",
+                      "cs.LG"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2507.22923v1",
+                    "title": "How and Where to Translate? The Impact of Translation Strategies in Cross-lingual LLM Prompting",
+                    "summary": "Despite advances in the multilingual capabilities of Large Language Models (LLMs), their performance varies substantially across different languages and tasks. In multilingual retrieval-augmented generation (RAG)-based systems, knowledge bases (KB) are often shared from high-resource languages (such as English) to low-resource ones, resulting in retrieved information from the KB being in a different language than the rest of the context. In such scenarios, two common practices are pre-translation to create a mono-lingual prompt and cross-lingual prompting for direct inference. However, the impact of these choices remains unclear. In this paper, we systematically evaluate the impact of different prompt translation strategies for classification tasks with RAG-enhanced LLMs in multilingual systems. Experimental results show that an optimized prompting strategy can significantly improve knowledge sharing across languages, therefore improve the performance on the downstream classification task. The findings advocate for a broader utilization of multilingual resource sharing and cross-lingual prompt optimization for non-English languages, especially the low-resource ones.",
+                    "authors": [
+                      "Aman Gupta",
+                      "Yingying Zhuang",
+                      "Zhou Yu",
+                      "Ziji Zhang",
+                      "Anurag Beniwal"
+                    ],
+                    "published": "2025-07-21T19:37:15Z",
+                    "updated": "2025-07-21T19:37:15Z",
+                    "url": "http://arxiv.org/abs/2507.22923v1",
+                    "pdf_url": "https://arxiv.org/pdf/2507.22923v1",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.CL",
+                    "categories": [
+                      "cs.CL",
+                      "cs.AI"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2401.06105v1",
+                    "title": "PALP: Prompt Aligned Personalization of Text-to-Image Models",
+                    "summary": "Content creators often aim to create personalized images using personal subjects that go beyond the capabilities of conventional text-to-image models. Additionally, they may want the resulting image to encompass a specific location, style, ambiance, and more. Existing personalization methods may compromise personalization ability or the alignment to complex textual prompts. This trade-off can impede the fulfillment of user prompts and subject fidelity. We propose a new approach focusing on personalization methods for a \\emph{single} prompt to address this issue. We term our approach prompt-aligned personalization. While this may seem restrictive, our method excels in improving text alignment, enabling the creation of images with complex and intricate prompts, which may pose a challenge for current techniques. In particular, our method keeps the personalized model aligned with a target prompt using an additional score distillation sampling term. We demonstrate the versatility of our method in multi- and single-shot settings and further show that it can compose multiple subjects or use inspiration from reference images, such as artworks. We compare our approach quantitatively and qualitatively with existing baselines and state-of-the-art techniques.",
+                    "authors": [
+                      "Moab Arar",
+                      "Andrey Voynov",
+                      "Amir Hertz",
+                      "Omri Avrahami",
+                      "Shlomi Fruchter",
+                      "Yael Pritch",
+                      "Daniel Cohen-Or",
+                      "Ariel Shamir"
+                    ],
+                    "published": "2024-01-11T18:35:33Z",
+                    "updated": "2024-01-11T18:35:33Z",
+                    "url": "http://arxiv.org/abs/2401.06105v1",
+                    "pdf_url": "https://arxiv.org/pdf/2401.06105v1",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.CV",
+                    "categories": [
+                      "cs.CV",
+                      "cs.CL",
+                      "cs.GR",
+                      "cs.LG"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2509.21375v1",
+                    "title": "Automated Prompt Generation for Creative and Counterfactual Text-to-image Synthesis",
+                    "summary": "Text-to-image generation has advanced rapidly with large-scale multimodal training, yet fine-grained controllability remains a critical challenge. Counterfactual controllability, defined as the capacity to deliberately generate images that contradict common-sense patterns, remains a major challenge but plays a crucial role in enabling creativity and exploratory applications. In this work, we address this gap with a focus on counterfactual size (e.g., generating a tiny walrus beside a giant button) and propose an automatic prompt engineering framework that adapts base prompts into revised prompts for counterfactual images. The framework comprises three components: an image evaluator that guides dataset construction by identifying successful image generations, a supervised prompt rewriter that produces revised prompts, and a DPO-trained ranker that selects the optimal revised prompt. We construct the first counterfactual size text-image dataset and enhance the image evaluator by extending Grounded SAM with refinements, achieving a 114 percent improvement over its backbone. Experiments demonstrate that our method outperforms state-of-the-art baselines and ChatGPT-4o, establishing a foundation for future research on counterfactual controllability.",
+                    "authors": [
+                      "Aleksa Jelaca",
+                      "Ying Jiao",
+                      "Chang Tian",
+                      "Marie-Francine Moens"
+                    ],
+                    "published": "2025-09-23T07:22:31Z",
+                    "updated": "2025-09-23T07:22:31Z",
+                    "url": "http://arxiv.org/abs/2509.21375v1",
+                    "pdf_url": "https://arxiv.org/pdf/2509.21375v1",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.CV",
+                    "categories": [
+                      "cs.CV",
+                      "cs.AI"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2205.11503v1",
+                    "title": "Prompt-and-Rerank: A Method for Zero-Shot and Few-Shot Arbitrary Textual Style Transfer with Small Language Models",
+                    "summary": "We propose a method for arbitrary textual style transfer (TST)--the task of transforming a text into any given style--utilizing general-purpose pre-trained language models. Our method, Prompt-and-Rerank, is based on a mathematical formulation of the TST task, decomposing it into three constituent components: textual similarity, target style strength, and fluency. Specifically, our method first uses zero-shot or few-shot prompting to obtain a set of candidate generations in the target style, and then re-ranks these candidates according to a combination of the three components above. Empirically, our method enables small pre-trained language models to perform on par with state-of-the-art large-scale models while consuming two orders of magnitude less compute and memory. Finally, we conduct a systematic investigation of the effect of model size and prompt design (e.g., prompt paraphrasing and delimiter-pair choice) on style transfer quality across seven diverse textual style transfer datasets.",
+                    "authors": [
+                      "Mirac Suzgun",
+                      "Luke Melas-Kyriazi",
+                      "Dan Jurafsky"
+                    ],
+                    "published": "2022-05-23T17:57:15Z",
+                    "updated": "2022-05-23T17:57:15Z",
+                    "url": "http://arxiv.org/abs/2205.11503v1",
+                    "pdf_url": "https://arxiv.org/pdf/2205.11503v1",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.CL",
+                    "categories": [
+                      "cs.CL"
+                    ]
+                  }
+                ],
+                "rate_limit_note": "arXiv may return 429 if called too frequently; this tool waits at least 3 seconds between requests in-process."
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "summarize",
+              "args": {
+                "text": "Visual prompt tuning (VPT) is a promising solution incorporating learnable prompt tokens to customize pre-trained models for downstream tasks. However, VPT and its variants often encounter challenges like prompt initialization, prompt length, and subpar performance in self-supervised pretraining, hindering successful contextual adaptation. This study commences by exploring the correlation evolvement between prompts and patch tokens during proficient training. Inspired by the observation that the prompt tokens tend to share high mutual information with patch tokens, we propose initializing prompts with downstream token prototypes. The strategic initialization, a stand-in for the previous initialization, substantially improves performance in fine-tuning. To refine further, we optimize token construction with a streamlined pipeline that maintains excellent performance with almost no increase in computational expenses compared to VPT. Exhaustive experiments show our proposed approach outperforms existing methods by a remarkable margin. For instance, it surpasses full fine-tuning in 19 out of 24 tasks, using less than 0.4% of learnable parameters on the FGVC and VTAB-1K benchmarks. Notably, our method significantly advances the adaptation for self-supervised pretraining, achieving impressive task performance gains of at least 10% to 30%. Besides, the experimental results demonstrate the proposed SPT is robust to prompt lengths and scales well with model capacity and training data size. We finally provide an insightful exploration into the amount of target data facilitating the adaptation of pre-trained models to downstream tasks. The code is available at https://github.com/WangYZ1608/Self-Prompt-Tuning.",
+                "max_sentences": 3
+              }
+            },
+            {
+              "name": "summarize",
+              "args": {
+                "text": "Despite advances in the multilingual capabilities of Large Language Models (LLMs), their performance varies substantially across different languages and tasks. In multilingual retrieval-augmented generation (RAG)-based systems, knowledge bases (KB) are often shared from high-resource languages (such as English) to low-resource ones, resulting in retrieved information from the KB being in a different language than the rest of the context. In such scenarios, two common practices are pre-translation to create a mono-lingual prompt and cross-lingual prompting for direct inference. However, the impact of these choices remains unclear. In this paper, we systematically evaluate the impact of different prompt translation strategies for classification tasks with RAG-enhanced LLMs in multilingual systems. Experimental results show that an optimized prompting strategy can significantly improve knowledge sharing across languages, therefore improve the performance on the downstream classification task. The findings advocate for a broader utilization of multilingual resource sharing and cross-lingual prompt optimization for non-English languages, especially the low-resource ones.",
+                "max_sentences": 3
+              }
+            },
+            {
+              "name": "summarize",
+              "args": {
+                "text": "Content creators often aim to create personalized images using personal subjects that go beyond the capabilities of conventional text-to-image models. Additionally, they may want the resulting image to encompass a specific location, style, ambiance, and more. Existing personalization methods may compromise personalization ability or the alignment to complex textual prompts. This trade-off can impede the fulfillment of user prompts and subject fidelity. We propose a new approach focusing on personalization methods for a single prompt to address this issue. We term our approach prompt-aligned personalization. While this may seem restrictive, our method excels in improving text alignment, enabling the creation of images with complex and intricate prompts, which may pose a challenge for current techniques. In particular, our method keeps the personalized model aligned with a target prompt using an additional score distillation sampling term. We demonstrate the versatility of our method in multi- and single-shot settings and further show that it can compose multiple subjects or use inspiration from reference images, such as artworks. We compare our approach quantitatively and qualitatively with existing baselines and state-of-the-art techniques.",
+                "max_sentences": 3
+              }
+            },
+            {
+              "name": "summarize",
+              "args": {
+                "text": "Text-to-image generation has advanced rapidly with large-scale multimodal training, yet fine-grained controllability remains a critical challenge. Counterfactual controllability, defined as the capacity to deliberately generate images that contradict common-sense patterns, remains a major challenge but plays a crucial role in enabling creativity and exploratory applications. In this work, we address this gap with a focus on counterfactual size (e.g., generating a tiny walrus beside a giant button) and propose an automatic prompt engineering framework that adapts base prompts into revised prompts for counterfactual images. The framework comprises three components: an image evaluator that guides dataset construction by identifying successful image generations, a supervised prompt rewriter that produces revised prompts, and a DPO-trained ranker that selects the optimal revised prompt. We construct the first counterfactual size text-image dataset and enhance the image evaluator by extending Grounded SAM with refinements, achieving a 114 percent improvement over its backbone. Experiments demonstrate that our method outperforms state-of-the-art baselines and ChatGPT-4o, establishing a foundation for future research on counterfactual controllability.",
+                "max_sentences": 3
+              }
+            },
+            {
+              "name": "summarize",
+              "args": {
+                "text": "We propose a method for arbitrary textual style transfer (TST)--the task of transforming a text into any given style--utilizing general-purpose pre-trained language models. Our method, Prompt-and-Rerank, is based on a mathematical formulation of the TST task, decomposing it into three constituent components: textual similarity, target style strength, and fluency. Specifically, our method first uses zero-shot or few-shot prompting to obtain a set of candidate generations in the target style, and then re-ranks these candidates according to a combination of the three components above. Empirically, our method enables small pre-trained language models to perform on par with state-of-the-art large-scale models while consuming two orders of magnitude less compute and memory. Finally, we conduct a systematic investigation of the effect of model size and prompt design (e.g., prompt paraphrasing and delimiter-pair choice) on style transfer quality across seven diverse textual style transfer datasets.",
+                "max_sentences": 3
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "summarize",
+              "args": {
+                "text": "Visual prompt tuning (VPT) is a promising solution incorporating learnable prompt tokens to customize pre-trained models for downstream tasks. However, VPT and its variants often encounter challenges like prompt initialization, prompt length, and subpar performance in self-supervised pretraining, hindering successful contextual adaptation. This study commences by exploring the correlation evolvement between prompts and patch tokens during proficient training. Inspired by the observation that the prompt tokens tend to share high mutual information with patch tokens, we propose initializing prompts with downstream token prototypes. The strategic initialization, a stand-in for the previous initialization, substantially improves performance in fine-tuning. To refine further, we optimize token construction with a streamlined pipeline that maintains excellent performance with almost no increase in computational expenses compared to VPT. Exhaustive experiments show our proposed approach outperforms existing methods by a remarkable margin. For instance, it surpasses full fine-tuning in 19 out of 24 tasks, using less than 0.4% of learnable parameters on the FGVC and VTAB-1K benchmarks. Notably, our method significantly advances the adaptation for self-supervised pretraining, achieving impressive task performance gains of at least 10% to 30%. Besides, the experimental results demonstrate the proposed SPT is robust to prompt lengths and scales well with model capacity and training data size. We finally provide an insightful exploration into the amount of target data facilitating the adaptation of pre-trained models to downstream tasks. The code is available at https://github.com/WangYZ1608/Self-Prompt-Tuning.",
+                "max_sentences": 3
+              },
+              "result": {
+                "tool": "summarize",
+                "text": "Visual prompt tuning (VPT) is a promising solution incorporating learnable prompt tokens to customize pre-trained models for downstream tasks. However, VPT and its variants often encounter challenges like prompt initialization, prompt length, and subpar performance in self-supervised pretraining, hindering successful contextual adaptation. This study commences by exploring the correlation evolvement between prompts and patch tokens during proficient training. Inspired by the observation that the prompt tokens tend to share high mutual information with patch tokens, we propose initializing prompts with downstream token prototypes. The strategic initialization, a stand-in for the previous initialization, substantially improves performance in fine-tuning. To refine further, we optimize token construction with a streamlined pipeline that maintains excellent performance with almost no increase in computational expenses compared to VPT. Exhaustive experiments show our proposed approach outperforms existing methods by a remarkable margin. For instance, it surpasses full fine-tuning in 19 out of 24 tasks, using less than 0.4% of learnable parameters on the FGVC and VTAB-1K benchmarks. Notably, our method significantly advances the adaptation for self-supervised pretraining, achieving impressive task performance gains of at least 10% to 30%. Besides, the experimental results demonstrate the proposed SPT is robust to prompt lengths and scales well with model capacity and training data size. We finally provide an insightful exploration into the amount of target data facilitating the adaptation of pre-trained models to downstream tasks. The code is available at https://github.com/WangYZ1608/Self-Prompt-Tuning.",
+                "summary": "Visual prompt tuning (VPT) is a promising solution incorporating learnable prompt tokens to customize pre-trained models for downstream tasks. However, VPT and its variants often encounter challenges like prompt initialization, prompt length, and subpar performance in self-supervised pretraining, hindering successful contextual adaptation. This study commences by exploring the correlation evolvement between prompts and patch tokens during proficient training...",
+                "sentence_count": 12,
+                "used_sentences": 3
+              }
+            },
+            {
+              "tool": "summarize",
+              "args": {
+                "text": "Despite advances in the multilingual capabilities of Large Language Models (LLMs), their performance varies substantially across different languages and tasks. In multilingual retrieval-augmented generation (RAG)-based systems, knowledge bases (KB) are often shared from high-resource languages (such as English) to low-resource ones, resulting in retrieved information from the KB being in a different language than the rest of the context. In such scenarios, two common practices are pre-translation to create a mono-lingual prompt and cross-lingual prompting for direct inference. However, the impact of these choices remains unclear. In this paper, we systematically evaluate the impact of different prompt translation strategies for classification tasks with RAG-enhanced LLMs in multilingual systems. Experimental results show that an optimized prompting strategy can significantly improve knowledge sharing across languages, therefore improve the performance on the downstream classification task. The findings advocate for a broader utilization of multilingual resource sharing and cross-lingual prompt optimization for non-English languages, especially the low-resource ones.",
+                "max_sentences": 3
+              },
+              "result": {
+                "tool": "summarize",
+                "text": "Despite advances in the multilingual capabilities of Large Language Models (LLMs), their performance varies substantially across different languages and tasks. In multilingual retrieval-augmented generation (RAG)-based systems, knowledge bases (KB) are often shared from high-resource languages (such as English) to low-resource ones, resulting in retrieved information from the KB being in a different language than the rest of the context. In such scenarios, two common practices are pre-translation to create a mono-lingual prompt and cross-lingual prompting for direct inference. However, the impact of these choices remains unclear. In this paper, we systematically evaluate the impact of different prompt translation strategies for classification tasks with RAG-enhanced LLMs in multilingual systems. Experimental results show that an optimized prompting strategy can significantly improve knowledge sharing across languages, therefore improve the performance on the downstream classification task. The findings advocate for a broader utilization of multilingual resource sharing and cross-lingual prompt optimization for non-English languages, especially the low-resource ones.",
+                "summary": "Despite advances in the multilingual capabilities of Large Language Models (LLMs), their performance varies substantially across different languages and tasks. In multilingual retrieval-augmented generation (RAG)-based systems, knowledge bases (KB) are often shared from high-resource languages (such as English) to low-resource ones, resulting in retrieved information from the KB being in a different language than the rest of the context. In such scenarios, two common practices are pre-translation to create a mono-lingual prompt and cross-lingual prompting for direct inference...",
+                "sentence_count": 7,
+                "used_sentences": 3
+              }
+            },
+            {
+              "tool": "summarize",
+              "args": {
+                "text": "Content creators often aim to create personalized images using personal subjects that go beyond the capabilities of conventional text-to-image models. Additionally, they may want the resulting image to encompass a specific location, style, ambiance, and more. Existing personalization methods may compromise personalization ability or the alignment to complex textual prompts. This trade-off can impede the fulfillment of user prompts and subject fidelity. We propose a new approach focusing on personalization methods for a single prompt to address this issue. We term our approach prompt-aligned personalization. While this may seem restrictive, our method excels in improving text alignment, enabling the creation of images with complex and intricate prompts, which may pose a challenge for current techniques. In particular, our method keeps the personalized model aligned with a target prompt using an additional score distillation sampling term. We demonstrate the versatility of our method in multi- and single-shot settings and further show that it can compose multiple subjects or use inspiration from reference images, such as artworks. We compare our approach quantitatively and qualitatively with existing baselines and state-of-the-art techniques.",
+                "max_sentences": 3
+              },
+              "result": {
+                "tool": "summarize",
+                "text": "Content creators often aim to create personalized images using personal subjects that go beyond the capabilities of conventional text-to-image models. Additionally, they may want the resulting image to encompass a specific location, style, ambiance, and more. Existing personalization methods may compromise personalization ability or the alignment to complex textual prompts. This trade-off can impede the fulfillment of user prompts and subject fidelity. We propose a new approach focusing on personalization methods for a single prompt to address this issue. We term our approach prompt-aligned personalization. While this may seem restrictive, our method excels in improving text alignment, enabling the creation of images with complex and intricate prompts, which may pose a challenge for current techniques. In particular, our method keeps the personalized model aligned with a target prompt using an additional score distillation sampling term. We demonstrate the versatility of our method in multi- and single-shot settings and further show that it can compose multiple subjects or use inspiration from reference images, such as artworks. We compare our approach quantitatively and qualitatively with existing baselines and state-of-the-art techniques.",
+                "summary": "Content creators often aim to create personalized images using personal subjects that go beyond the capabilities of conventional text-to-image models. Additionally, they may want the resulting image to encompass a specific location, style, ambiance, and more. Existing personalization methods may compromise personalization ability or the alignment to complex textual prompts...",
+                "sentence_count": 10,
+                "used_sentences": 3
+              }
+            },
+            {
+              "tool": "summarize",
+              "args": {
+                "text": "Text-to-image generation has advanced rapidly with large-scale multimodal training, yet fine-grained controllability remains a critical challenge. Counterfactual controllability, defined as the capacity to deliberately generate images that contradict common-sense patterns, remains a major challenge but plays a crucial role in enabling creativity and exploratory applications. In this work, we address this gap with a focus on counterfactual size (e.g., generating a tiny walrus beside a giant button) and propose an automatic prompt engineering framework that adapts base prompts into revised prompts for counterfactual images. The framework comprises three components: an image evaluator that guides dataset construction by identifying successful image generations, a supervised prompt rewriter that produces revised prompts, and a DPO-trained ranker that selects the optimal revised prompt. We construct the first counterfactual size text-image dataset and enhance the image evaluator by extending Grounded SAM with refinements, achieving a 114 percent improvement over its backbone. Experiments demonstrate that our method outperforms state-of-the-art baselines and ChatGPT-4o, establishing a foundation for future research on counterfactual controllability.",
+                "max_sentences": 3
+              },
+              "result": {
+                "tool": "summarize",
+                "text": "Text-to-image generation has advanced rapidly with large-scale multimodal training, yet fine-grained controllability remains a critical challenge. Counterfactual controllability, defined as the capacity to deliberately generate images that contradict common-sense patterns, remains a major challenge but plays a crucial role in enabling creativity and exploratory applications. In this work, we address this gap with a focus on counterfactual size (e.g., generating a tiny walrus beside a giant button) and propose an automatic prompt engineering framework that adapts base prompts into revised prompts for counterfactual images. The framework comprises three components: an image evaluator that guides dataset construction by identifying successful image generations, a supervised prompt rewriter that produces revised prompts, and a DPO-trained ranker that selects the optimal revised prompt. We construct the first counterfactual size text-image dataset and enhance the image evaluator by extending Grounded SAM with refinements, achieving a 114 percent improvement over its backbone. Experiments demonstrate that our method outperforms state-of-the-art baselines and ChatGPT-4o, establishing a foundation for future research on counterfactual controllability.",
+                "summary": "Text-to-image generation has advanced rapidly with large-scale multimodal training, yet fine-grained controllability remains a critical challenge. Counterfactual controllability, defined as the capacity to deliberately generate images that contradict common-sense patterns, remains a major challenge but plays a crucial role in enabling creativity and exploratory applications. In this work, we address this gap with a focus on counterfactual size (e.g., generating a tiny walrus beside a giant button) and propose an automatic prompt engineering framework that adapts base prompts into revised prompts for counterfactual images...",
+                "sentence_count": 6,
+                "used_sentences": 3
+              }
+            },
+            {
+              "tool": "summarize",
+              "args": {
+                "text": "We propose a method for arbitrary textual style transfer (TST)--the task of transforming a text into any given style--utilizing general-purpose pre-trained language models. Our method, Prompt-and-Rerank, is based on a mathematical formulation of the TST task, decomposing it into three constituent components: textual similarity, target style strength, and fluency. Specifically, our method first uses zero-shot or few-shot prompting to obtain a set of candidate generations in the target style, and then re-ranks these candidates according to a combination of the three components above. Empirically, our method enables small pre-trained language models to perform on par with state-of-the-art large-scale models while consuming two orders of magnitude less compute and memory. Finally, we conduct a systematic investigation of the effect of model size and prompt design (e.g., prompt paraphrasing and delimiter-pair choice) on style transfer quality across seven diverse textual style transfer datasets.",
+                "max_sentences": 3
+              },
+              "result": {
+                "tool": "summarize",
+                "text": "We propose a method for arbitrary textual style transfer (TST)--the task of transforming a text into any given style--utilizing general-purpose pre-trained language models. Our method, Prompt-and-Rerank, is based on a mathematical formulation of the TST task, decomposing it into three constituent components: textual similarity, target style strength, and fluency. Specifically, our method first uses zero-shot or few-shot prompting to obtain a set of candidate generations in the target style, and then re-ranks these candidates according to a combination of the three components above. Empirically, our method enables small pre-trained language models to perform on par with state-of-the-art large-scale models while consuming two orders of magnitude less compute and memory. Finally, we conduct a systematic investigation of the effect of model size and prompt design (e.g., prompt paraphrasing and delimiter-pair choice) on style transfer quality across seven diverse textual style transfer datasets.",
+                "summary": "We propose a method for arbitrary textual style transfer (TST)--the task of transforming a text into any given style--utilizing general-purpose pre-trained language models. Our method, Prompt-and-Rerank, is based on a mathematical formulation of the TST task, decomposing it into three constituent components: textual similarity, target style strength, and fluency. Specifically, our method first uses zero-shot or few-shot prompting to obtain a set of candidate generations in the target style, and then re-ranks these candidates according to a combination of the three components above...",
+                "sentence_count": 5,
+                "used_sentences": 3
+              }
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "format",
+              "args": {
+                "items": [
+                  {
+                    "title": "Revisiting the Power of Prompt for Visual Tuning",
+                    "url": "http://arxiv.org/abs/2402.02382v3",
+                    "source": "arxiv.org",
+                    "summary": "Visual prompt tuning (VPT) is a promising solution incorporating learnable prompt tokens to customize pre-trained models for downstream tasks. However, VPT and its variants often encounter challenges like prompt initialization, prompt length, and subpar performance in self-supervised pretraining, hindering successful contextual adaptation."
+                  },
+                  {
+                    "title": "How and Where to Translate? The Impact of Translation Strategies in Cross-lingual LLM Prompting",
+                    "url": "http://arxiv.org/abs/2507.22923v1",
+                    "source": "arxiv.org",
+                    "summary": "Despite advances in the multilingual capabilities of Large Language Models (LLMs), their performance varies substantially across different languages and tasks. In multilingual retrieval-augmented generation (RAG)-based systems, knowledge bases (KB) are often shared from high-resource languages (such as English) to low-resource ones, resulting in retrieved information from the KB being in a different language than the rest of the context."
+                  },
+                  {
+                    "title": "PALP: Prompt Aligned Personalization of Text-to-Image Models",
+                    "url": "http://arxiv.org/abs/2401.06105v1",
+                    "source": "arxiv.org",
+                    "summary": "Content creators often aim to create personalized images using personal subjects that go beyond the capabilities of conventional text-to-image models. Additionally, they may want the resulting image to encompass a specific location, style, ambiance, and more."
+                  },
+                  {
+                    "title": "Automated Prompt Generation for Creative and Counterfactual Text-to-image Synthesis",
+                    "url": "http://arxiv.org/abs/2509.21375v1",
+                    "source": "arxiv.org",
+                    "summary": "Text-to-image generation has advanced rapidly with large-scale multimodal training, yet fine-grained controllability remains a critical challenge. Counterfactual controllability, defined as the capacity to deliberately generate images that contradict common-sense patterns, remains a major challenge but plays a crucial role in enabling creativity and exploratory applications."
+                  },
+                  {
+                    "title": "Prompt-and-Rerank: A Method for Zero-Shot and Few-Shot Arbitrary Textual Style Transfer with Small Language Models",
+                    "url": "http://arxiv.org/abs/2205.11503v1",
+                    "source": "arxiv.org",
+                    "summary": "We propose a method for arbitrary textual style transfer (TST)--the task of transforming a text into any given style--utilizing general-purpose pre-trained language models."
+                  }
+                ],
+                "template": "bullets",
+                "headline": "Papers on Prompt"
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "format",
+              "args": {
+                "items": [
+                  {
+                    "title": "Revisiting the Power of Prompt for Visual Tuning",
+                    "url": "http://arxiv.org/abs/2402.02382v3",
+                    "source": "arxiv.org",
+                    "summary": "Visual prompt tuning (VPT) is a promising solution incorporating learnable prompt tokens to customize pre-trained models for downstream tasks. However, VPT and its variants often encounter challenges like prompt initialization, prompt length, and subpar performance in self-supervised pretraining, hindering successful contextual adaptation."
+                  },
+                  {
+                    "title": "How and Where to Translate? The Impact of Translation Strategies in Cross-lingual LLM Prompting",
+                    "url": "http://arxiv.org/abs/2507.22923v1",
+                    "source": "arxiv.org",
+                    "summary": "Despite advances in the multilingual capabilities of Large Language Models (LLMs), their performance varies substantially across different languages and tasks. In multilingual retrieval-augmented generation (RAG)-based systems, knowledge bases (KB) are often shared from high-resource languages (such as English) to low-resource ones, resulting in retrieved information from the KB being in a different language than the rest of the context."
+                  },
+                  {
+                    "title": "PALP: Prompt Aligned Personalization of Text-to-Image Models",
+                    "url": "http://arxiv.org/abs/2401.06105v1",
+                    "source": "arxiv.org",
+                    "summary": "Content creators often aim to create personalized images using personal subjects that go beyond the capabilities of conventional text-to-image models. Additionally, they may want the resulting image to encompass a specific location, style, ambiance, and more."
+                  },
+                  {
+                    "title": "Automated Prompt Generation for Creative and Counterfactual Text-to-image Synthesis",
+                    "url": "http://arxiv.org/abs/2509.21375v1",
+                    "source": "arxiv.org",
+                    "summary": "Text-to-image generation has advanced rapidly with large-scale multimodal training, yet fine-grained controllability remains a critical challenge. Counterfactual controllability, defined as the capacity to deliberately generate images that contradict common-sense patterns, remains a major challenge but plays a crucial role in enabling creativity and exploratory applications."
+                  },
+                  {
+                    "title": "Prompt-and-Rerank: A Method for Zero-Shot and Few-Shot Arbitrary Textual Style Transfer with Small Language Models",
+                    "url": "http://arxiv.org/abs/2205.11503v1",
+                    "source": "arxiv.org",
+                    "summary": "We propose a method for arbitrary textual style transfer (TST)--the task of transforming a text into any given style--utilizing general-purpose pre-trained language models."
+                  }
+                ],
+                "template": "bullets",
+                "headline": "Papers on Prompt"
+              },
+              "result": {
+                "tool": "render_digest",
+                "template": "bullets",
+                "markdown": "- Visual prompt tuning (VPT) is a promising solution incorporating learnable prompt tokens to customize pre-trained models for downstream tasks. However, VPT and its variants often encounter challenges like prompt initialization, prompt length, and subpar performance in self-sup... - [arxiv.org](http://arxiv.org/abs/2402.02382v3)\n- Despite advances in the multilingual capabilities of Large Language Models (LLMs), their performance varies substantially across different languages and tasks. In multilingual retrieval-augmented generation (RAG)-based systems, knowledge bases (KB) are often shared from high-r... - [arxiv.org](http://arxiv.org/abs/2507.22923v1)\n- Content creators often aim to create personalized images using personal subjects that go beyond the capabilities of conventional text-to-image models. Additionally, they may want the resulting image to encompass a specific location, style, ambiance, and more. - [arxiv.org](http://arxiv.org/abs/2401.06105v1)\n- Text-to-image generation has advanced rapidly with large-scale multimodal training, yet fine-grained controllability remains a critical challenge. Counterfactual controllability, defined as the capacity to deliberately generate images that contradict common-sense patterns, rem... - [arxiv.org](http://arxiv.org/abs/2509.21375v1)\n- We propose a method for arbitrary textual style transfer (TST)--the task of transforming a text into any given style--utilizing general-purpose pre-trained language models. - [arxiv.org](http://arxiv.org/abs/2205.11503v1)",
+                "item_count": 5
+              }
+            }
+          ]
+        },
+        {
+          "round": 4,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "send",
+              "args": {
+                "text": "# Papers on Prompt\n\n- **Revisiting the Power of Prompt for Visual Tuning**: Visual prompt tuning (VPT) is a promising solution incorporating learnable prompt tokens to customize pre-trained models for downstream tasks. However, VPT and its variants often encounter challenges like prompt initialization, prompt length, and subpar performance in self-supervised pretraining, hindering successful contextual adaptation. [Read more](http://arxiv.org/abs/2402.02382v3)\n\n- **How and Where to Translate? The Impact of Translation Strategies in Cross-lingual LLM Prompting**: Despite advances in the multilingual capabilities of Large Language Models (LLMs), their performance varies substantially across different languages and tasks. In multilingual retrieval-augmented generation (RAG)-based systems, knowledge bases (KB) are often shared from high-resource languages (such as English) to low-resource ones, resulting in retrieved information from the KB being in a different language than the rest of the context. [Read more](http://arxiv.org/abs/2507.22923v1)\n\n- **PALP: Prompt Aligned Personalization of Text-to-Image Models**: Content creators often aim to create personalized images using personal subjects that go beyond the capabilities of conventional text-to-image models. Additionally, they may want the resulting image to encompass a specific location, style, ambiance, and more. [Read more](http://arxiv.org/abs/2401.06105v1)\n\n- **Automated Prompt Generation for Creative and Counterfactual Text-to-image Synthesis**: Text-to-image generation has advanced rapidly with large-scale multimodal training, yet fine-grained controllability remains a critical challenge. Counterfactual controllability, defined as the capacity to deliberately generate images that contradict common-sense patterns, remains a major challenge but plays a crucial role in enabling creativity and exploratory applications. [Read more](http://arxiv.org/abs/2509.21375v1)\n\n- **Prompt-and-Rerank: A Method for Zero-Shot and Few-Shot Arbitrary Textual Style Transfer with Small Language Models**: We propose a method for arbitrary textual style transfer (TST)--the task of transforming a text into any given style--utilizing general-purpose pre-trained language models. [Read more](http://arxiv.org/abs/2205.11503v1)",
+                "confirmed": true
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "send",
+              "args": {
+                "text": "# Papers on Prompt\n\n- **Revisiting the Power of Prompt for Visual Tuning**: Visual prompt tuning (VPT) is a promising solution incorporating learnable prompt tokens to customize pre-trained models for downstream tasks. However, VPT and its variants often encounter challenges like prompt initialization, prompt length, and subpar performance in self-supervised pretraining, hindering successful contextual adaptation. [Read more](http://arxiv.org/abs/2402.02382v3)\n\n- **How and Where to Translate? The Impact of Translation Strategies in Cross-lingual LLM Prompting**: Despite advances in the multilingual capabilities of Large Language Models (LLMs), their performance varies substantially across different languages and tasks. In multilingual retrieval-augmented generation (RAG)-based systems, knowledge bases (KB) are often shared from high-resource languages (such as English) to low-resource ones, resulting in retrieved information from the KB being in a different language than the rest of the context. [Read more](http://arxiv.org/abs/2507.22923v1)\n\n- **PALP: Prompt Aligned Personalization of Text-to-Image Models**: Content creators often aim to create personalized images using personal subjects that go beyond the capabilities of conventional text-to-image models. Additionally, they may want the resulting image to encompass a specific location, style, ambiance, and more. [Read more](http://arxiv.org/abs/2401.06105v1)\n\n- **Automated Prompt Generation for Creative and Counterfactual Text-to-image Synthesis**: Text-to-image generation has advanced rapidly with large-scale multimodal training, yet fine-grained controllability remains a critical challenge. Counterfactual controllability, defined as the capacity to deliberately generate images that contradict common-sense patterns, remains a major challenge but plays a crucial role in enabling creativity and exploratory applications. [Read more](http://arxiv.org/abs/2509.21375v1)\n\n- **Prompt-and-Rerank: A Method for Zero-Shot and Few-Shot Arbitrary Textual Style Transfer with Small Language Models**: We propose a method for arbitrary textual style transfer (TST)--the task of transforming a text into any given style--utilizing general-purpose pre-trained language models. [Read more](http://arxiv.org/abs/2205.11503v1)",
+                "confirmed": true
+              },
+              "result": {
+                "tool": "send_telegram",
+                "error": "RuntimeError",
+                "message": "Missing TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID env var"
+              }
+            }
+          ]
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "papers",
+          "args": {
+            "query": "prompt",
+            "max_results": 5
+          },
+          "result": {
+            "tool": "arxiv_search",
+            "query": "prompt",
+            "api_query": "all:prompt",
+            "total_results": 40591,
+            "items": [
+              {
+                "arxiv_id": "2402.02382v3",
+                "title": "Revisiting the Power of Prompt for Visual Tuning",
+                "summary": "Visual prompt tuning (VPT) is a promising solution incorporating learnable prompt tokens to customize pre-trained models for downstream tasks. However, VPT and its variants often encounter challenges like prompt initialization, prompt length, and subpar performance in self-supervised pretraining, hindering successful contextual adaptation. This study commences by exploring the correlation evolvement between prompts and patch tokens during proficient training. Inspired by the observation that the prompt tokens tend to share high mutual information with patch tokens, we propose initializing prompts with downstream token prototypes. The strategic initialization, a stand-in for the previous initialization, substantially improves performance in fine-tuning. To refine further, we optimize token construction with a streamlined pipeline that maintains excellent performance with almost no increase in computational expenses compared to VPT. Exhaustive experiments show our proposed approach outperforms existing methods by a remarkable margin. For instance, it surpasses full fine-tuning in 19 out of 24 tasks, using less than 0.4% of learnable parameters on the FGVC and VTAB-1K benchmarks. Notably, our method significantly advances the adaptation for self-supervised pretraining, achieving impressive task performance gains of at least 10% to 30%. Besides, the experimental results demonstrate the proposed SPT is robust to prompt lengths and scales well with model capacity and training data size. We finally provide an insightful exploration into the amount of target data facilitating the adaptation of pre-trained models to downstream tasks. The code is available at https://github.com/WangYZ1608/Self-Prompt-Tuning.",
+                "authors": [
+                  "Yuzhu Wang",
+                  "Lechao Cheng",
+                  "Chaowei Fang",
+                  "Dingwen Zhang",
+                  "Manni Duan",
+                  "Meng Wang"
+                ],
+                "published": "2024-02-04T07:49:02Z",
+                "updated": "2024-05-27T06:51:07Z",
+                "url": "http://arxiv.org/abs/2402.02382v3",
+                "pdf_url": "https://arxiv.org/pdf/2402.02382v3",
+                "source": "arxiv.org",
+                "primary_category": "cs.CV",
+                "categories": [
+                  "cs.CV",
+                  "cs.LG"
+                ]
+              },
+              {
+                "arxiv_id": "2507.22923v1",
+                "title": "How and Where to Translate? The Impact of Translation Strategies in Cross-lingual LLM Prompting",
+                "summary": "Despite advances in the multilingual capabilities of Large Language Models (LLMs), their performance varies substantially across different languages and tasks. In multilingual retrieval-augmented generation (RAG)-based systems, knowledge bases (KB) are often shared from high-resource languages (such as English) to low-resource ones, resulting in retrieved information from the KB being in a different language than the rest of the context. In such scenarios, two common practices are pre-translation to create a mono-lingual prompt and cross-lingual prompting for direct inference. However, the impact of these choices remains unclear. In this paper, we systematically evaluate the impact of different prompt translation strategies for classification tasks with RAG-enhanced LLMs in multilingual systems. Experimental results show that an optimized prompting strategy can significantly improve knowledge sharing across languages, therefore improve the performance on the downstream classification task. The findings advocate for a broader utilization of multilingual resource sharing and cross-lingual prompt optimization for non-English languages, especially the low-resource ones.",
+                "authors": [
+                  "Aman Gupta",
+                  "Yingying Zhuang",
+                  "Zhou Yu",
+                  "Ziji Zhang",
+                  "Anurag Beniwal"
+                ],
+                "published": "2025-07-21T19:37:15Z",
+                "updated": "2025-07-21T19:37:15Z",
+                "url": "http://arxiv.org/abs/2507.22923v1",
+                "pdf_url": "https://arxiv.org/pdf/2507.22923v1",
+                "source": "arxiv.org",
+                "primary_category": "cs.CL",
+                "categories": [
+                  "cs.CL",
+                  "cs.AI"
+                ]
+              },
+              {
+                "arxiv_id": "2401.06105v1",
+                "title": "PALP: Prompt Aligned Personalization of Text-to-Image Models",
+                "summary": "Content creators often aim to create personalized images using personal subjects that go beyond the capabilities of conventional text-to-image models. Additionally, they may want the resulting image to encompass a specific location, style, ambiance, and more. Existing personalization methods may compromise personalization ability or the alignment to complex textual prompts. This trade-off can impede the fulfillment of user prompts and subject fidelity. We propose a new approach focusing on personalization methods for a \\emph{single} prompt to address this issue. We term our approach prompt-aligned personalization. While this may seem restrictive, our method excels in improving text alignment, enabling the creation of images with complex and intricate prompts, which may pose a challenge for current techniques. In particular, our method keeps the personalized model aligned with a target prompt using an additional score distillation sampling term. We demonstrate the versatility of our method in multi- and single-shot settings and further show that it can compose multiple subjects or use inspiration from reference images, such as artworks. We compare our approach quantitatively and qualitatively with existing baselines and state-of-the-art techniques.",
+                "authors": [
+                  "Moab Arar",
+                  "Andrey Voynov",
+                  "Amir Hertz",
+                  "Omri Avrahami",
+                  "Shlomi Fruchter",
+                  "Yael Pritch",
+                  "Daniel Cohen-Or",
+                  "Ariel Shamir"
+                ],
+                "published": "2024-01-11T18:35:33Z",
+                "updated": "2024-01-11T18:35:33Z",
+                "url": "http://arxiv.org/abs/2401.06105v1",
+                "pdf_url": "https://arxiv.org/pdf/2401.06105v1",
+                "source": "arxiv.org",
+                "primary_category": "cs.CV",
+                "categories": [
+                  "cs.CV",
+                  "cs.CL",
+                  "cs.GR",
+                  "cs.LG"
+                ]
+              },
+              {
+                "arxiv_id": "2509.21375v1",
+                "title": "Automated Prompt Generation for Creative and Counterfactual Text-to-image Synthesis",
+                "summary": "Text-to-image generation has advanced rapidly with large-scale multimodal training, yet fine-grained controllability remains a critical challenge. Counterfactual controllability, defined as the capacity to deliberately generate images that contradict common-sense patterns, remains a major challenge but plays a crucial role in enabling creativity and exploratory applications. In this work, we address this gap with a focus on counterfactual size (e.g., generating a tiny walrus beside a giant button) and propose an automatic prompt engineering framework that adapts base prompts into revised prompts for counterfactual images. The framework comprises three components: an image evaluator that guides dataset construction by identifying successful image generations, a supervised prompt rewriter that produces revised prompts, and a DPO-trained ranker that selects the optimal revised prompt. We construct the first counterfactual size text-image dataset and enhance the image evaluator by extending Grounded SAM with refinements, achieving a 114 percent improvement over its backbone. Experiments demonstrate that our method outperforms state-of-the-art baselines and ChatGPT-4o, establishing a foundation for future research on counterfactual controllability.",
+                "authors": [
+                  "Aleksa Jelaca",
+                  "Ying Jiao",
+                  "Chang Tian",
+                  "Marie-Francine Moens"
+                ],
+                "published": "2025-09-23T07:22:31Z",
+                "updated": "2025-09-23T07:22:31Z",
+                "url": "http://arxiv.org/abs/2509.21375v1",
+                "pdf_url": "https://arxiv.org/pdf/2509.21375v1",
+                "source": "arxiv.org",
+                "primary_category": "cs.CV",
+                "categories": [
+                  "cs.CV",
+                  "cs.AI"
+                ]
+              },
+              {
+                "arxiv_id": "2205.11503v1",
+                "title": "Prompt-and-Rerank: A Method for Zero-Shot and Few-Shot Arbitrary Textual Style Transfer with Small Language Models",
+                "summary": "We propose a method for arbitrary textual style transfer (TST)--the task of transforming a text into any given style--utilizing general-purpose pre-trained language models. Our method, Prompt-and-Rerank, is based on a mathematical formulation of the TST task, decomposing it into three constituent components: textual similarity, target style strength, and fluency. Specifically, our method first uses zero-shot or few-shot prompting to obtain a set of candidate generations in the target style, and then re-ranks these candidates according to a combination of the three components above. Empirically, our method enables small pre-trained language models to perform on par with state-of-the-art large-scale models while consuming two orders of magnitude less compute and memory. Finally, we conduct a systematic investigation of the effect of model size and prompt design (e.g., prompt paraphrasing and delimiter-pair choice) on style transfer quality across seven diverse textual style transfer datasets.",
+                "authors": [
+                  "Mirac Suzgun",
+                  "Luke Melas-Kyriazi",
+                  "Dan Jurafsky"
+                ],
+                "published": "2022-05-23T17:57:15Z",
+                "updated": "2022-05-23T17:57:15Z",
+                "url": "http://arxiv.org/abs/2205.11503v1",
+                "pdf_url": "https://arxiv.org/pdf/2205.11503v1",
+                "source": "arxiv.org",
+                "primary_category": "cs.CL",
+                "categories": [
+                  "cs.CL"
+                ]
+              }
+            ],
+            "rate_limit_note": "arXiv may return 429 if called too frequently; this tool waits at least 3 seconds between requests in-process."
+          }
+        },
+        {
+          "tool": "summarize",
+          "args": {
+            "text": "Visual prompt tuning (VPT) is a promising solution incorporating learnable prompt tokens to customize pre-trained models for downstream tasks. However, VPT and its variants often encounter challenges like prompt initialization, prompt length, and subpar performance in self-supervised pretraining, hindering successful contextual adaptation. This study commences by exploring the correlation evolvement between prompts and patch tokens during proficient training. Inspired by the observation that the prompt tokens tend to share high mutual information with patch tokens, we propose initializing prompts with downstream token prototypes. The strategic initialization, a stand-in for the previous initialization, substantially improves performance in fine-tuning. To refine further, we optimize token construction with a streamlined pipeline that maintains excellent performance with almost no increase in computational expenses compared to VPT. Exhaustive experiments show our proposed approach outperforms existing methods by a remarkable margin. For instance, it surpasses full fine-tuning in 19 out of 24 tasks, using less than 0.4% of learnable parameters on the FGVC and VTAB-1K benchmarks. Notably, our method significantly advances the adaptation for self-supervised pretraining, achieving impressive task performance gains of at least 10% to 30%. Besides, the experimental results demonstrate the proposed SPT is robust to prompt lengths and scales well with model capacity and training data size. We finally provide an insightful exploration into the amount of target data facilitating the adaptation of pre-trained models to downstream tasks. The code is available at https://github.com/WangYZ1608/Self-Prompt-Tuning.",
+            "max_sentences": 3
+          },
+          "result": {
+            "tool": "summarize",
+            "text": "Visual prompt tuning (VPT) is a promising solution incorporating learnable prompt tokens to customize pre-trained models for downstream tasks. However, VPT and its variants often encounter challenges like prompt initialization, prompt length, and subpar performance in self-supervised pretraining, hindering successful contextual adaptation. This study commences by exploring the correlation evolvement between prompts and patch tokens during proficient training. Inspired by the observation that the prompt tokens tend to share high mutual information with patch tokens, we propose initializing prompts with downstream token prototypes. The strategic initialization, a stand-in for the previous initialization, substantially improves performance in fine-tuning. To refine further, we optimize token construction with a streamlined pipeline that maintains excellent performance with almost no increase in computational expenses compared to VPT. Exhaustive experiments show our proposed approach outperforms existing methods by a remarkable margin. For instance, it surpasses full fine-tuning in 19 out of 24 tasks, using less than 0.4% of learnable parameters on the FGVC and VTAB-1K benchmarks. Notably, our method significantly advances the adaptation for self-supervised pretraining, achieving impressive task performance gains of at least 10% to 30%. Besides, the experimental results demonstrate the proposed SPT is robust to prompt lengths and scales well with model capacity and training data size. We finally provide an insightful exploration into the amount of target data facilitating the adaptation of pre-trained models to downstream tasks. The code is available at https://github.com/WangYZ1608/Self-Prompt-Tuning.",
+            "summary": "Visual prompt tuning (VPT) is a promising solution incorporating learnable prompt tokens to customize pre-trained models for downstream tasks. However, VPT and its variants often encounter challenges like prompt initialization, prompt length, and subpar performance in self-supervised pretraining, hindering successful contextual adaptation. This study commences by exploring the correlation evolvement between prompts and patch tokens during proficient training...",
+            "sentence_count": 12,
+            "used_sentences": 3
+          }
+        },
+        {
+          "tool": "summarize",
+          "args": {
+            "text": "Despite advances in the multilingual capabilities of Large Language Models (LLMs), their performance varies substantially across different languages and tasks. In multilingual retrieval-augmented generation (RAG)-based systems, knowledge bases (KB) are often shared from high-resource languages (such as English) to low-resource ones, resulting in retrieved information from the KB being in a different language than the rest of the context. In such scenarios, two common practices are pre-translation to create a mono-lingual prompt and cross-lingual prompting for direct inference. However, the impact of these choices remains unclear. In this paper, we systematically evaluate the impact of different prompt translation strategies for classification tasks with RAG-enhanced LLMs in multilingual systems. Experimental results show that an optimized prompting strategy can significantly improve knowledge sharing across languages, therefore improve the performance on the downstream classification task. The findings advocate for a broader utilization of multilingual resource sharing and cross-lingual prompt optimization for non-English languages, especially the low-resource ones.",
+            "max_sentences": 3
+          },
+          "result": {
+            "tool": "summarize",
+            "text": "Despite advances in the multilingual capabilities of Large Language Models (LLMs), their performance varies substantially across different languages and tasks. In multilingual retrieval-augmented generation (RAG)-based systems, knowledge bases (KB) are often shared from high-resource languages (such as English) to low-resource ones, resulting in retrieved information from the KB being in a different language than the rest of the context. In such scenarios, two common practices are pre-translation to create a mono-lingual prompt and cross-lingual prompting for direct inference. However, the impact of these choices remains unclear. In this paper, we systematically evaluate the impact of different prompt translation strategies for classification tasks with RAG-enhanced LLMs in multilingual systems. Experimental results show that an optimized prompting strategy can significantly improve knowledge sharing across languages, therefore improve the performance on the downstream classification task. The findings advocate for a broader utilization of multilingual resource sharing and cross-lingual prompt optimization for non-English languages, especially the low-resource ones.",
+            "summary": "Despite advances in the multilingual capabilities of Large Language Models (LLMs), their performance varies substantially across different languages and tasks. In multilingual retrieval-augmented generation (RAG)-based systems, knowledge bases (KB) are often shared from high-resource languages (such as English) to low-resource ones, resulting in retrieved information from the KB being in a different language than the rest of the context. In such scenarios, two common practices are pre-translation to create a mono-lingual prompt and cross-lingual prompting for direct inference...",
+            "sentence_count": 7,
+            "used_sentences": 3
+          }
+        },
+        {
+          "tool": "summarize",
+          "args": {
+            "text": "Content creators often aim to create personalized images using personal subjects that go beyond the capabilities of conventional text-to-image models. Additionally, they may want the resulting image to encompass a specific location, style, ambiance, and more. Existing personalization methods may compromise personalization ability or the alignment to complex textual prompts. This trade-off can impede the fulfillment of user prompts and subject fidelity. We propose a new approach focusing on personalization methods for a single prompt to address this issue. We term our approach prompt-aligned personalization. While this may seem restrictive, our method excels in improving text alignment, enabling the creation of images with complex and intricate prompts, which may pose a challenge for current techniques. In particular, our method keeps the personalized model aligned with a target prompt using an additional score distillation sampling term. We demonstrate the versatility of our method in multi- and single-shot settings and further show that it can compose multiple subjects or use inspiration from reference images, such as artworks. We compare our approach quantitatively and qualitatively with existing baselines and state-of-the-art techniques.",
+            "max_sentences": 3
+          },
+          "result": {
+            "tool": "summarize",
+            "text": "Content creators often aim to create personalized images using personal subjects that go beyond the capabilities of conventional text-to-image models. Additionally, they may want the resulting image to encompass a specific location, style, ambiance, and more. Existing personalization methods may compromise personalization ability or the alignment to complex textual prompts. This trade-off can impede the fulfillment of user prompts and subject fidelity. We propose a new approach focusing on personalization methods for a single prompt to address this issue. We term our approach prompt-aligned personalization. While this may seem restrictive, our method excels in improving text alignment, enabling the creation of images with complex and intricate prompts, which may pose a challenge for current techniques. In particular, our method keeps the personalized model aligned with a target prompt using an additional score distillation sampling term. We demonstrate the versatility of our method in multi- and single-shot settings and further show that it can compose multiple subjects or use inspiration from reference images, such as artworks. We compare our approach quantitatively and qualitatively with existing baselines and state-of-the-art techniques.",
+            "summary": "Content creators often aim to create personalized images using personal subjects that go beyond the capabilities of conventional text-to-image models. Additionally, they may want the resulting image to encompass a specific location, style, ambiance, and more. Existing personalization methods may compromise personalization ability or the alignment to complex textual prompts...",
+            "sentence_count": 10,
+            "used_sentences": 3
+          }
+        },
+        {
+          "tool": "summarize",
+          "args": {
+            "text": "Text-to-image generation has advanced rapidly with large-scale multimodal training, yet fine-grained controllability remains a critical challenge. Counterfactual controllability, defined as the capacity to deliberately generate images that contradict common-sense patterns, remains a major challenge but plays a crucial role in enabling creativity and exploratory applications. In this work, we address this gap with a focus on counterfactual size (e.g., generating a tiny walrus beside a giant button) and propose an automatic prompt engineering framework that adapts base prompts into revised prompts for counterfactual images. The framework comprises three components: an image evaluator that guides dataset construction by identifying successful image generations, a supervised prompt rewriter that produces revised prompts, and a DPO-trained ranker that selects the optimal revised prompt. We construct the first counterfactual size text-image dataset and enhance the image evaluator by extending Grounded SAM with refinements, achieving a 114 percent improvement over its backbone. Experiments demonstrate that our method outperforms state-of-the-art baselines and ChatGPT-4o, establishing a foundation for future research on counterfactual controllability.",
+            "max_sentences": 3
+          },
+          "result": {
+            "tool": "summarize",
+            "text": "Text-to-image generation has advanced rapidly with large-scale multimodal training, yet fine-grained controllability remains a critical challenge. Counterfactual controllability, defined as the capacity to deliberately generate images that contradict common-sense patterns, remains a major challenge but plays a crucial role in enabling creativity and exploratory applications. In this work, we address this gap with a focus on counterfactual size (e.g., generating a tiny walrus beside a giant button) and propose an automatic prompt engineering framework that adapts base prompts into revised prompts for counterfactual images. The framework comprises three components: an image evaluator that guides dataset construction by identifying successful image generations, a supervised prompt rewriter that produces revised prompts, and a DPO-trained ranker that selects the optimal revised prompt. We construct the first counterfactual size text-image dataset and enhance the image evaluator by extending Grounded SAM with refinements, achieving a 114 percent improvement over its backbone. Experiments demonstrate that our method outperforms state-of-the-art baselines and ChatGPT-4o, establishing a foundation for future research on counterfactual controllability.",
+            "summary": "Text-to-image generation has advanced rapidly with large-scale multimodal training, yet fine-grained controllability remains a critical challenge. Counterfactual controllability, defined as the capacity to deliberately generate images that contradict common-sense patterns, remains a major challenge but plays a crucial role in enabling creativity and exploratory applications. In this work, we address this gap with a focus on counterfactual size (e.g., generating a tiny walrus beside a giant button) and propose an automatic prompt engineering framework that adapts base prompts into revised prompts for counterfactual images...",
+            "sentence_count": 6,
+            "used_sentences": 3
+          }
+        },
+        {
+          "tool": "summarize",
+          "args": {
+            "text": "We propose a method for arbitrary textual style transfer (TST)--the task of transforming a text into any given style--utilizing general-purpose pre-trained language models. Our method, Prompt-and-Rerank, is based on a mathematical formulation of the TST task, decomposing it into three constituent components: textual similarity, target style strength, and fluency. Specifically, our method first uses zero-shot or few-shot prompting to obtain a set of candidate generations in the target style, and then re-ranks these candidates according to a combination of the three components above. Empirically, our method enables small pre-trained language models to perform on par with state-of-the-art large-scale models while consuming two orders of magnitude less compute and memory. Finally, we conduct a systematic investigation of the effect of model size and prompt design (e.g., prompt paraphrasing and delimiter-pair choice) on style transfer quality across seven diverse textual style transfer datasets.",
+            "max_sentences": 3
+          },
+          "result": {
+            "tool": "summarize",
+            "text": "We propose a method for arbitrary textual style transfer (TST)--the task of transforming a text into any given style--utilizing general-purpose pre-trained language models. Our method, Prompt-and-Rerank, is based on a mathematical formulation of the TST task, decomposing it into three constituent components: textual similarity, target style strength, and fluency. Specifically, our method first uses zero-shot or few-shot prompting to obtain a set of candidate generations in the target style, and then re-ranks these candidates according to a combination of the three components above. Empirically, our method enables small pre-trained language models to perform on par with state-of-the-art large-scale models while consuming two orders of magnitude less compute and memory. Finally, we conduct a systematic investigation of the effect of model size and prompt design (e.g., prompt paraphrasing and delimiter-pair choice) on style transfer quality across seven diverse textual style transfer datasets.",
+            "summary": "We propose a method for arbitrary textual style transfer (TST)--the task of transforming a text into any given style--utilizing general-purpose pre-trained language models. Our method, Prompt-and-Rerank, is based on a mathematical formulation of the TST task, decomposing it into three constituent components: textual similarity, target style strength, and fluency. Specifically, our method first uses zero-shot or few-shot prompting to obtain a set of candidate generations in the target style, and then re-ranks these candidates according to a combination of the three components above...",
+            "sentence_count": 5,
+            "used_sentences": 3
+          }
+        },
+        {
+          "tool": "format",
+          "args": {
+            "items": [
+              {
+                "title": "Revisiting the Power of Prompt for Visual Tuning",
+                "url": "http://arxiv.org/abs/2402.02382v3",
+                "source": "arxiv.org",
+                "summary": "Visual prompt tuning (VPT) is a promising solution incorporating learnable prompt tokens to customize pre-trained models for downstream tasks. However, VPT and its variants often encounter challenges like prompt initialization, prompt length, and subpar performance in self-supervised pretraining, hindering successful contextual adaptation."
+              },
+              {
+                "title": "How and Where to Translate? The Impact of Translation Strategies in Cross-lingual LLM Prompting",
+                "url": "http://arxiv.org/abs/2507.22923v1",
+                "source": "arxiv.org",
+                "summary": "Despite advances in the multilingual capabilities of Large Language Models (LLMs), their performance varies substantially across different languages and tasks. In multilingual retrieval-augmented generation (RAG)-based systems, knowledge bases (KB) are often shared from high-resource languages (such as English) to low-resource ones, resulting in retrieved information from the KB being in a different language than the rest of the context."
+              },
+              {
+                "title": "PALP: Prompt Aligned Personalization of Text-to-Image Models",
+                "url": "http://arxiv.org/abs/2401.06105v1",
+                "source": "arxiv.org",
+                "summary": "Content creators often aim to create personalized images using personal subjects that go beyond the capabilities of conventional text-to-image models. Additionally, they may want the resulting image to encompass a specific location, style, ambiance, and more."
+              },
+              {
+                "title": "Automated Prompt Generation for Creative and Counterfactual Text-to-image Synthesis",
+                "url": "http://arxiv.org/abs/2509.21375v1",
+                "source": "arxiv.org",
+                "summary": "Text-to-image generation has advanced rapidly with large-scale multimodal training, yet fine-grained controllability remains a critical challenge. Counterfactual controllability, defined as the capacity to deliberately generate images that contradict common-sense patterns, remains a major challenge but plays a crucial role in enabling creativity and exploratory applications."
+              },
+              {
+                "title": "Prompt-and-Rerank: A Method for Zero-Shot and Few-Shot Arbitrary Textual Style Transfer with Small Language Models",
+                "url": "http://arxiv.org/abs/2205.11503v1",
+                "source": "arxiv.org",
+                "summary": "We propose a method for arbitrary textual style transfer (TST)--the task of transforming a text into any given style--utilizing general-purpose pre-trained language models."
+              }
+            ],
+            "template": "bullets",
+            "headline": "Papers on Prompt"
+          },
+          "result": {
+            "tool": "render_digest",
+            "template": "bullets",
+            "markdown": "- Visual prompt tuning (VPT) is a promising solution incorporating learnable prompt tokens to customize pre-trained models for downstream tasks. However, VPT and its variants often encounter challenges like prompt initialization, prompt length, and subpar performance in self-sup... - [arxiv.org](http://arxiv.org/abs/2402.02382v3)\n- Despite advances in the multilingual capabilities of Large Language Models (LLMs), their performance varies substantially across different languages and tasks. In multilingual retrieval-augmented generation (RAG)-based systems, knowledge bases (KB) are often shared from high-r... - [arxiv.org](http://arxiv.org/abs/2507.22923v1)\n- Content creators often aim to create personalized images using personal subjects that go beyond the capabilities of conventional text-to-image models. Additionally, they may want the resulting image to encompass a specific location, style, ambiance, and more. - [arxiv.org](http://arxiv.org/abs/2401.06105v1)\n- Text-to-image generation has advanced rapidly with large-scale multimodal training, yet fine-grained controllability remains a critical challenge. Counterfactual controllability, defined as the capacity to deliberately generate images that contradict common-sense patterns, rem... - [arxiv.org](http://arxiv.org/abs/2509.21375v1)\n- We propose a method for arbitrary textual style transfer (TST)--the task of transforming a text into any given style--utilizing general-purpose pre-trained language models. - [arxiv.org](http://arxiv.org/abs/2205.11503v1)",
+            "item_count": 5
+          }
+        },
+        {
+          "tool": "send",
+          "args": {
+            "text": "# Papers on Prompt\n\n- **Revisiting the Power of Prompt for Visual Tuning**: Visual prompt tuning (VPT) is a promising solution incorporating learnable prompt tokens to customize pre-trained models for downstream tasks. However, VPT and its variants often encounter challenges like prompt initialization, prompt length, and subpar performance in self-supervised pretraining, hindering successful contextual adaptation. [Read more](http://arxiv.org/abs/2402.02382v3)\n\n- **How and Where to Translate? The Impact of Translation Strategies in Cross-lingual LLM Prompting**: Despite advances in the multilingual capabilities of Large Language Models (LLMs), their performance varies substantially across different languages and tasks. In multilingual retrieval-augmented generation (RAG)-based systems, knowledge bases (KB) are often shared from high-resource languages (such as English) to low-resource ones, resulting in retrieved information from the KB being in a different language than the rest of the context. [Read more](http://arxiv.org/abs/2507.22923v1)\n\n- **PALP: Prompt Aligned Personalization of Text-to-Image Models**: Content creators often aim to create personalized images using personal subjects that go beyond the capabilities of conventional text-to-image models. Additionally, they may want the resulting image to encompass a specific location, style, ambiance, and more. [Read more](http://arxiv.org/abs/2401.06105v1)\n\n- **Automated Prompt Generation for Creative and Counterfactual Text-to-image Synthesis**: Text-to-image generation has advanced rapidly with large-scale multimodal training, yet fine-grained controllability remains a critical challenge. Counterfactual controllability, defined as the capacity to deliberately generate images that contradict common-sense patterns, remains a major challenge but plays a crucial role in enabling creativity and exploratory applications. [Read more](http://arxiv.org/abs/2509.21375v1)\n\n- **Prompt-and-Rerank: A Method for Zero-Shot and Few-Shot Arbitrary Textual Style Transfer with Small Language Models**: We propose a method for arbitrary textual style transfer (TST)--the task of transforming a text into any given style--utilizing general-purpose pre-trained language models. [Read more](http://arxiv.org/abs/2205.11503v1)",
+            "confirmed": true
+          },
+          "result": {
+            "tool": "send_telegram",
+            "error": "RuntimeError",
+            "message": "Missing TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID env var"
+          }
+        }
+      ],
+      "ended_at": "2026-06-02T16:56:02"
+    }
+  ]
+}

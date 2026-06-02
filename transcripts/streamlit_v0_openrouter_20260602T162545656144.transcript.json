@@ -1,0 +1,311 @@
+{
+  "transcript_id": "streamlit_v0_openrouter_20260602T162545656144",
+  "version": "v0",
+  "artifact_version": "v0+peb1c8179815b+t72256b6a6dde",
+  "prompt_hash": "eb1c8179815bd79d34de7d326420bb99b3072e6e8ae96464c02d4411f905fc68",
+  "tools_hash": "72256b6a6dde2c99a431450b9af309a4ed3c926d1684afa3d068cf59286d731e",
+  "provider": "openrouter",
+  "model": null,
+  "system_prompt": "C:\\Users\\Admin\\Desktop\\lab4\\Day04-C401-Prompt-Engineering-Tool-Calling-Labs-student\\starter_v0\\artifacts\\system_prompt.md",
+  "tools": "C:\\Users\\Admin\\Desktop\\lab4\\Day04-C401-Prompt-Engineering-Tool-Calling-Labs-student\\starter_v0\\artifacts\\tools.yaml",
+  "history_window": 5,
+  "max_tool_rounds": 4,
+  "created_at": "2026-06-02T16:25:45",
+  "updated_at": "2026-06-02T16:25:45",
+  "turns": [
+    {
+      "turn_index": 3,
+      "started_at": "2026-06-02T16:25:45",
+      "user": "Tìm thông tin về roney",
+      "status": "answered",
+      "assistant_text": "Here are some recent updates and information about Wayne Rooney:\n\n1. **Wayne and Moyes: The Untold Story Of The Transfer That Changed Everything!**  \n   In this episode of the Wayne Rooney Show, Rooney discusses his transfer from Everton to Manchester United with manager David Moyes. The episode covers secret meetings and emotional reflections on leaving his boyhood club. [Watch it here](https://www.youtube.com/watch?v=UjGIEt7njkI).\n\n2. **Inside Rooney's Transfer from Everton to Man Utd**  \n   David Moyes shares insights on how Wayne Rooney's transfer to Manchester United came about. This video provides a brief overview of the transfer saga. [View the video](https://www.bbc.co.uk/sport/football/videos/c794y90e88no).\n\n3. **The Wayne Rooney Show: Premier League Team of the Season**  \n   Rooney discusses his picks for the Premier League team of the season, highlighting standout players. [Check it out here](https://www.bbc.co.uk/sport/football/videos/c172krrgznqo).\n\n4. **Roy's Saipan Secrets & Man United's Go Kart Controversy**  \n   Another episode of The Green Room features Wayne Rooney sharing stories and insights from his career. [Watch it here](https://www.youtube.com/watch?v=1A975Ql0X3c).\n\n5. **BIG Calls as Wayne Rooney Reveals Team of the Year**  \n   Rooney reveals his Premier League Team of the Year, discussing why certain players made the cut. [Watch the video](https://www.youtube.com/watch?v=UbcjShcAgDU).\n\n### Recent Tweets:\n- **Wayne Rooney's Class**  \n  A tweet discussing Rooney's perspective on football and teamwork. [View tweet](https://x.com/MwakioAm/status/2061740353690935506).\n\n- **Branching Out Beyond Football**  \n  A tweet mentioning Rooney's ventures outside of football. [View tweet](https://x.com/Damdirtyape5/status/2061739643897569555).\n\n- **Referee Controversy**  \n  A discussion referencing Rooney's comments on a controversial match involving PSG. [View tweet](https://x.com/ibbourne/status/2061738728406597852).\n\nThese sources provide a comprehensive overview of Wayne Rooney's recent activities and discussions in the football world.",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "lookup",
+              "args": {
+                "query": "Wayne Rooney",
+                "topic": "general",
+                "max_results": 5
+              }
+            },
+            {
+              "name": "social_search",
+              "args": {
+                "query": "Wayne Rooney",
+                "search_type": "Latest",
+                "limit": 5
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "lookup",
+              "args": {
+                "query": "Wayne Rooney",
+                "topic": "general",
+                "max_results": 5
+              },
+              "result": {
+                "tool": "web_search",
+                "query": "Wayne Rooney",
+                "topic": "general",
+                "timeframe": "week",
+                "items": [
+                  {
+                    "title": "Wayne and Moyes: The Untold Story Of The Transfer That Changed Everything! | Wayne Rooney Show",
+                    "url": "https://www.youtube.com/watch?v=UjGIEt7njkI",
+                    "source": "youtube.com",
+                    "summary": "Wayne and Moyes: The Untold Story Of The Transfer That Changed Everything! | Wayne Rooney Show\nBBC Football\n11600 subscribers\n1264 likes\n120385 views\n29 May 2026\nWayne Rooney returns to Everton with the manager who gave him his debut, David Moyes. What really went on before Sir Alex finally signed Wayne - the Everton manager reveals all. Why did Everton really have to sell their biggest homegrown star? And would Wayne have done anything differently?\n\nFrom secret transfer meetings and emotional reflections on leaving his boyhood club, to the untold stories behind Rooney’s explosive rise, this is a fascinating reunion between two men whose careers are forever linked\n\nPlus, brutal old-school pre-seasons, brilliant dressing room stories, Everton’s revival under Moyes, and what do they both think of England’s and Scotland’s chances at the World Cup?.\n\nFollow more on the BBC Sport app, iPlayer and Sounds.\n\n00:00 Tease\n00:50 Intro  \n02:28 What was it like coming across Wayne Rooney?  \n04:52 Working with Rooney  \n06:47 Arriving at Everton in 2002  \n09:39 Is the club the right fit for the manager?  \n10:41 Wayne on leaving Everton  \n16:07 Being tough on players then and now  \n18:12 Knowing Wayne was going to leave  \n21:08 What is David Moyes most proud of at Everton?  \n22:42 How much has managing Premier League teams changed?  \n24:33 How has David changed from then to now?  \n24:37 Rooney’s pre-season antics  \n28:10 What’s it like being back at Everton?  \n32:01 Winning the Conference League with West Ham  \n34:36 Has there been a mentality shift in Everton?  \n37:37 World Cup chat\n\n=============\n\nFind us here: \n\nFacebook: https://www.facebook.com/BBCMOTD\nX: https://x.com/BBCMOTD\nInstagram: https://www.instagram.com/bbcfootball/\nTikTok: https://www.tiktok.com/@bbcsport\n\n#bbcfootball\n238 comments\n",
+                    "score": 0.44420364
+                  },
+                  {
+                    "title": "Inside Wayne Rooney's transfer from Everton to Man Utd as David Moyes appears on podcast - BBC Sport",
+                    "url": "https://www.bbc.co.uk/sport/football/videos/c794y90e88no",
+                    "source": "bbc.co.uk",
+                    "summary": "# Inside Rooney's transfer to Old Trafford. Everton manager David Moyes tells the story of how Wayne Rooney's transfer from Everton to Manchester United came about. Video, 00:01:13Inside Rooney's transfer to Old Trafford. Video, 00:03:00'It's been written' - Arsenal players look ahead to Champions League final. 'It's been written' - Arsenal players look ahead to Champions League final. Video, 00:02:48My dad told me at five years old I'd be world champion - Azim. Video, 00:02:53The Sunderland footballer setting record straight after 46 years. The Sunderland footballer setting record straight after 46 years. Video, 00:00:40Watch: UFC arena construction begins at White House. Video, 00:02:07'You've done Liverpool and Scotland proud' - Dalglish on Robertson. 'You've done Liverpool and Scotland proud' - Dalglish on Robertson. Video, 00:05:03Maguire's England posts 'not necessary' - Tuchel. Video, 00:02:13Guardiola explains decision to leave Man City. Video, 00:03:10'It all started with Jason Statham' - Verhoeven. Video, 00:02:55'Not a fake fight' - Usyk on Verhoeven & helping Joshua.",
+                    "score": 0.42792314
+                  },
+                  {
+                    "title": "The Wayne Rooney Show: Premier League team of the season - BBC Sport",
+                    "url": "https://www.bbc.co.uk/sport/football/videos/c172krrgznqo",
+                    "source": "bbc.co.uk",
+                    "summary": "# But does he make his team of the year? Wayne Rooney is a big fan of Arsenal striker Viktor Gyokeres, but does he make it into his Premier League team of the season? Video, 00:01:11But does he make his team of the year? Video, 00:02:26Arteta reflects on 'incredible' level of commitment from his team this season. Arteta reflects on 'incredible' level of commitment from his team this season. Video, 00:02:05We played some of our best football of season in first half - Arteta. Video, 00:00:26Rice focused on winning final game. Video, 00:01:16'One of the biggest of his career!' - Burgin wins 800m in 'special' race. 'One of the biggest of his career!' - Burgin wins 800m in 'special' race. Video, 00:06:06Watch as Celtic beat Rangers in Women's Scottish Cup final. Watch as Celtic beat Rangers in Women's Scottish Cup final. Liam Farrell lifts the Challenge Cup trophy with Wigan Warriors teammates after beating Hull KR in the final.",
+                    "score": 0.4071218
+                  },
+                  {
+                    "title": "Roy's Saipan Secrets & Man United's Go Kart Controversy ...",
+                    "url": "https://www.youtube.com/watch?v=1A975Ql0X3c",
+                    "source": "youtube.com",
+                    "summary": "Welcome back to another episode of The Green Room! In this episode, Wayne Rooney joins the team for another day in the studio filled with laughter,",
+                    "score": 0.38470465
+                  },
+                  {
+                    "title": "BIG Calls as Wayne Rooney REVEALS Team of the Year ...",
+                    "url": "https://www.youtube.com/watch?v=UbcjShcAgDU",
+                    "source": "youtube.com",
+                    "summary": "Wayne Rooney reveals his Premier League Team of the Year and the players he simply couldn't ignore. Why do Arsenal dominate his XI?",
+                    "score": 0.37202653
+                  }
+                ]
+              }
+            },
+            {
+              "tool": "social_search",
+              "args": {
+                "query": "Wayne Rooney",
+                "search_type": "Latest",
+                "limit": 5
+              },
+              "result": {
+                "tool": "search_tweets",
+                "query": "Wayne Rooney",
+                "search_type": "Latest",
+                "items": [
+                  {
+                    "title": "@GistArsena99455 This is what I call Class. Football isn't a one team affair. All teams need each other to compete. So b",
+                    "summary": "@GistArsena99455 This is what I call Class. Football isn't a one team affair. All teams need each other to compete. So bitterness doesn't hold. Wayne Rooney is a rare smart fella.",
+                    "url": "https://x.com/MwakioAm/status/2061740353690935506",
+                    "source": "@MwakioAm",
+                    "date": "Tue Jun 02 09:23:00 +0000 2026",
+                    "metrics": {
+                      "favorites": 0,
+                      "retweets": 0,
+                      "views": null
+                    }
+                  },
+                  {
+                    "title": "@Mutape88 @W3Zhira @Phidze72 @SekuruRoddie @Simba_LionDRED @ignitive3_0 @tonde_tonderai @NtateRanaka @lashiasn @tino_cas",
+                    "summary": "@Mutape88 @W3Zhira @Phidze72 @SekuruRoddie @Simba_LionDRED @ignitive3_0 @tonde_tonderai @NtateRanaka @lashiasn @tino_cash3 @garweh2011 @joecharex @pfunguro68410 @babatafi @Shumblex @mukokwapashata1 @BeautyZhuwao @abuhassan221 @pfunguro57708 @kkele @vargoe21 @BlessingMombes3 @VimILSung @Renegad63094431 @BigYouuttZim @Lashian I am not a conspiracy theorist. I kept my thoughts to myself. However, when I read statements by people like Wayne Rooney, Arsene Wenger&amp;Pettit, my mind was jolted. The question I have is-Are sovereign owned clubs-City and PSG-deploying sovereign diplomacy off the field?",
+                    "url": "https://x.com/scrutatorchings/status/2061739653598785592",
+                    "source": "@scrutatorchings",
+                    "date": "Tue Jun 02 09:20:13 +0000 2026",
+                    "metrics": {
+                      "favorites": 0,
+                      "retweets": 0,
+                      "views": "2"
+                    }
+                  },
+                  {
+                    "title": "@NGB2020 Wayne Rooney is branching out beyond football",
+                    "summary": "@NGB2020 Wayne Rooney is branching out beyond football",
+                    "url": "https://x.com/Damdirtyape5/status/2061739643897569555",
+                    "source": "@Damdirtyape5",
+                    "date": "Tue Jun 02 09:20:11 +0000 2026",
+                    "metrics": {
+                      "favorites": 0,
+                      "retweets": 0,
+                      "views": "1"
+                    }
+                  },
+                  {
+                    "title": "@FootballFactly This must be a joke?",
+                    "summary": "@FootballFactly This must be a joke?\n\nHe was wrong to blow before the corner kick was taken and spent the whole 2nd half blowing in favour of PSG while he counted the air miles and golf holidays coming his way from Qatar and its state-owned holding companies. As Wayne Rooney said, PSG stole it.",
+                    "url": "https://x.com/ibbourne/status/2061738728406597852",
+                    "source": "@ibbourne",
+                    "date": "Tue Jun 02 09:16:32 +0000 2026",
+                    "metrics": {
+                      "favorites": 0,
+                      "retweets": 0,
+                      "views": "3"
+                    }
+                  },
+                  {
+                    "title": "@Joe___Allen This is BS. The referee was wrong to blow before the corner kick was taken and spent the whole 2nd half blo",
+                    "summary": "@Joe___Allen This is BS. The referee was wrong to blow before the corner kick was taken and spent the whole 2nd half blowing in favour of PSG while he counted the air miles and golf holidays coming his way from Qatar and its state-owned holding companies. As Wayne Rooney said, PSG stole it.",
+                    "url": "https://x.com/ibbourne/status/2061737937738387753",
+                    "source": "@ibbourne",
+                    "date": "Tue Jun 02 09:13:24 +0000 2026",
+                    "metrics": {
+                      "favorites": 0,
+                      "retweets": 0,
+                      "views": "4"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": "Here are some recent updates and information about Wayne Rooney:\n\n1. **Wayne and Moyes: The Untold Story Of The Transfer That Changed Everything!**  \n   In this episode of the Wayne Rooney Show, Rooney discusses his transfer from Everton to Manchester United with manager David Moyes. The episode covers secret meetings and emotional reflections on leaving his boyhood club. [Watch it here](https://www.youtube.com/watch?v=UjGIEt7njkI).\n\n2. **Inside Rooney's Transfer from Everton to Man Utd**  \n   David Moyes shares insights on how Wayne Rooney's transfer to Manchester United came about. This video provides a brief overview of the transfer saga. [View the video](https://www.bbc.co.uk/sport/football/videos/c794y90e88no).\n\n3. **The Wayne Rooney Show: Premier League Team of the Season**  \n   Rooney discusses his picks for the Premier League team of the season, highlighting standout players. [Check it out here](https://www.bbc.co.uk/sport/football/videos/c172krrgznqo).\n\n4. **Roy's Saipan Secrets & Man United's Go Kart Controversy**  \n   Another episode of The Green Room features Wayne Rooney sharing stories and insights from his career. [Watch it here](https://www.youtube.com/watch?v=1A975Ql0X3c).\n\n5. **BIG Calls as Wayne Rooney Reveals Team of the Year**  \n   Rooney reveals his Premier League Team of the Year, discussing why certain players made the cut. [Watch the video](https://www.youtube.com/watch?v=UbcjShcAgDU).\n\n### Recent Tweets:\n- **Wayne Rooney's Class**  \n  A tweet discussing Rooney's perspective on football and teamwork. [View tweet](https://x.com/MwakioAm/status/2061740353690935506).\n\n- **Branching Out Beyond Football**  \n  A tweet mentioning Rooney's ventures outside of football. [View tweet](https://x.com/Damdirtyape5/status/2061739643897569555).\n\n- **Referee Controversy**  \n  A discussion referencing Rooney's comments on a controversial match involving PSG. [View tweet](https://x.com/ibbourne/status/2061738728406597852).\n\nThese sources provide a comprehensive overview of Wayne Rooney's recent activities and discussions in the football world.",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "lookup",
+          "args": {
+            "query": "Wayne Rooney",
+            "topic": "general",
+            "max_results": 5
+          },
+          "result": {
+            "tool": "web_search",
+            "query": "Wayne Rooney",
+            "topic": "general",
+            "timeframe": "week",
+            "items": [
+              {
+                "title": "Wayne and Moyes: The Untold Story Of The Transfer That Changed Everything! | Wayne Rooney Show",
+                "url": "https://www.youtube.com/watch?v=UjGIEt7njkI",
+                "source": "youtube.com",
+                "summary": "Wayne and Moyes: The Untold Story Of The Transfer That Changed Everything! | Wayne Rooney Show\nBBC Football\n11600 subscribers\n1264 likes\n120385 views\n29 May 2026\nWayne Rooney returns to Everton with the manager who gave him his debut, David Moyes. What really went on before Sir Alex finally signed Wayne - the Everton manager reveals all. Why did Everton really have to sell their biggest homegrown star? And would Wayne have done anything differently?\n\nFrom secret transfer meetings and emotional reflections on leaving his boyhood club, to the untold stories behind Rooney’s explosive rise, this is a fascinating reunion between two men whose careers are forever linked\n\nPlus, brutal old-school pre-seasons, brilliant dressing room stories, Everton’s revival under Moyes, and what do they both think of England’s and Scotland’s chances at the World Cup?.\n\nFollow more on the BBC Sport app, iPlayer and Sounds.\n\n00:00 Tease\n00:50 Intro  \n02:28 What was it like coming across Wayne Rooney?  \n04:52 Working with Rooney  \n06:47 Arriving at Everton in 2002  \n09:39 Is the club the right fit for the manager?  \n10:41 Wayne on leaving Everton  \n16:07 Being tough on players then and now  \n18:12 Knowing Wayne was going to leave  \n21:08 What is David Moyes most proud of at Everton?  \n22:42 How much has managing Premier League teams changed?  \n24:33 How has David changed from then to now?  \n24:37 Rooney’s pre-season antics  \n28:10 What’s it like being back at Everton?  \n32:01 Winning the Conference League with West Ham  \n34:36 Has there been a mentality shift in Everton?  \n37:37 World Cup chat\n\n=============\n\nFind us here: \n\nFacebook: https://www.facebook.com/BBCMOTD\nX: https://x.com/BBCMOTD\nInstagram: https://www.instagram.com/bbcfootball/\nTikTok: https://www.tiktok.com/@bbcsport\n\n#bbcfootball\n238 comments\n",
+                "score": 0.44420364
+              },
+              {
+                "title": "Inside Wayne Rooney's transfer from Everton to Man Utd as David Moyes appears on podcast - BBC Sport",
+                "url": "https://www.bbc.co.uk/sport/football/videos/c794y90e88no",
+                "source": "bbc.co.uk",
+                "summary": "# Inside Rooney's transfer to Old Trafford. Everton manager David Moyes tells the story of how Wayne Rooney's transfer from Everton to Manchester United came about. Video, 00:01:13Inside Rooney's transfer to Old Trafford. Video, 00:03:00'It's been written' - Arsenal players look ahead to Champions League final. 'It's been written' - Arsenal players look ahead to Champions League final. Video, 00:02:48My dad told me at five years old I'd be world champion - Azim. Video, 00:02:53The Sunderland footballer setting record straight after 46 years. The Sunderland footballer setting record straight after 46 years. Video, 00:00:40Watch: UFC arena construction begins at White House. Video, 00:02:07'You've done Liverpool and Scotland proud' - Dalglish on Robertson. 'You've done Liverpool and Scotland proud' - Dalglish on Robertson. Video, 00:05:03Maguire's England posts 'not necessary' - Tuchel. Video, 00:02:13Guardiola explains decision to leave Man City. Video, 00:03:10'It all started with Jason Statham' - Verhoeven. Video, 00:02:55'Not a fake fight' - Usyk on Verhoeven & helping Joshua.",
+                "score": 0.42792314
+              },
+              {
+                "title": "The Wayne Rooney Show: Premier League team of the season - BBC Sport",
+                "url": "https://www.bbc.co.uk/sport/football/videos/c172krrgznqo",
+                "source": "bbc.co.uk",
+                "summary": "# But does he make his team of the year? Wayne Rooney is a big fan of Arsenal striker Viktor Gyokeres, but does he make it into his Premier League team of the season? Video, 00:01:11But does he make his team of the year? Video, 00:02:26Arteta reflects on 'incredible' level of commitment from his team this season. Arteta reflects on 'incredible' level of commitment from his team this season. Video, 00:02:05We played some of our best football of season in first half - Arteta. Video, 00:00:26Rice focused on winning final game. Video, 00:01:16'One of the biggest of his career!' - Burgin wins 800m in 'special' race. 'One of the biggest of his career!' - Burgin wins 800m in 'special' race. Video, 00:06:06Watch as Celtic beat Rangers in Women's Scottish Cup final. Watch as Celtic beat Rangers in Women's Scottish Cup final. Liam Farrell lifts the Challenge Cup trophy with Wigan Warriors teammates after beating Hull KR in the final.",
+                "score": 0.4071218
+              },
+              {
+                "title": "Roy's Saipan Secrets & Man United's Go Kart Controversy ...",
+                "url": "https://www.youtube.com/watch?v=1A975Ql0X3c",
+                "source": "youtube.com",
+                "summary": "Welcome back to another episode of The Green Room! In this episode, Wayne Rooney joins the team for another day in the studio filled with laughter,",
+                "score": 0.38470465
+              },
+              {
+                "title": "BIG Calls as Wayne Rooney REVEALS Team of the Year ...",
+                "url": "https://www.youtube.com/watch?v=UbcjShcAgDU",
+                "source": "youtube.com",
+                "summary": "Wayne Rooney reveals his Premier League Team of the Year and the players he simply couldn't ignore. Why do Arsenal dominate his XI?",
+                "score": 0.37202653
+              }
+            ]
+          }
+        },
+        {
+          "tool": "social_search",
+          "args": {
+            "query": "Wayne Rooney",
+            "search_type": "Latest",
+            "limit": 5
+          },
+          "result": {
+            "tool": "search_tweets",
+            "query": "Wayne Rooney",
+            "search_type": "Latest",
+            "items": [
+              {
+                "title": "@GistArsena99455 This is what I call Class. Football isn't a one team affair. All teams need each other to compete. So b",
+                "summary": "@GistArsena99455 This is what I call Class. Football isn't a one team affair. All teams need each other to compete. So bitterness doesn't hold. Wayne Rooney is a rare smart fella.",
+                "url": "https://x.com/MwakioAm/status/2061740353690935506",
+                "source": "@MwakioAm",
+                "date": "Tue Jun 02 09:23:00 +0000 2026",
+                "metrics": {
+                  "favorites": 0,
+                  "retweets": 0,
+                  "views": null
+                }
+              },
+              {
+                "title": "@Mutape88 @W3Zhira @Phidze72 @SekuruRoddie @Simba_LionDRED @ignitive3_0 @tonde_tonderai @NtateRanaka @lashiasn @tino_cas",
+                "summary": "@Mutape88 @W3Zhira @Phidze72 @SekuruRoddie @Simba_LionDRED @ignitive3_0 @tonde_tonderai @NtateRanaka @lashiasn @tino_cash3 @garweh2011 @joecharex @pfunguro68410 @babatafi @Shumblex @mukokwapashata1 @BeautyZhuwao @abuhassan221 @pfunguro57708 @kkele @vargoe21 @BlessingMombes3 @VimILSung @Renegad63094431 @BigYouuttZim @Lashian I am not a conspiracy theorist. I kept my thoughts to myself. However, when I read statements by people like Wayne Rooney, Arsene Wenger&amp;Pettit, my mind was jolted. The question I have is-Are sovereign owned clubs-City and PSG-deploying sovereign diplomacy off the field?",
+                "url": "https://x.com/scrutatorchings/status/2061739653598785592",
+                "source": "@scrutatorchings",
+                "date": "Tue Jun 02 09:20:13 +0000 2026",
+                "metrics": {
+                  "favorites": 0,
+                  "retweets": 0,
+                  "views": "2"
+                }
+              },
+              {
+                "title": "@NGB2020 Wayne Rooney is branching out beyond football",
+                "summary": "@NGB2020 Wayne Rooney is branching out beyond football",
+                "url": "https://x.com/Damdirtyape5/status/2061739643897569555",
+                "source": "@Damdirtyape5",
+                "date": "Tue Jun 02 09:20:11 +0000 2026",
+                "metrics": {
+                  "favorites": 0,
+                  "retweets": 0,
+                  "views": "1"
+                }
+              },
+              {
+                "title": "@FootballFactly This must be a joke?",
+                "summary": "@FootballFactly This must be a joke?\n\nHe was wrong to blow before the corner kick was taken and spent the whole 2nd half blowing in favour of PSG while he counted the air miles and golf holidays coming his way from Qatar and its state-owned holding companies. As Wayne Rooney said, PSG stole it.",
+                "url": "https://x.com/ibbourne/status/2061738728406597852",
+                "source": "@ibbourne",
+                "date": "Tue Jun 02 09:16:32 +0000 2026",
+                "metrics": {
+                  "favorites": 0,
+                  "retweets": 0,
+                  "views": "3"
+                }
+              },
+              {
+                "title": "@Joe___Allen This is BS. The referee was wrong to blow before the corner kick was taken and spent the whole 2nd half blo",
+                "summary": "@Joe___Allen This is BS. The referee was wrong to blow before the corner kick was taken and spent the whole 2nd half blowing in favour of PSG while he counted the air miles and golf holidays coming his way from Qatar and its state-owned holding companies. As Wayne Rooney said, PSG stole it.",
+                "url": "https://x.com/ibbourne/status/2061737937738387753",
+                "source": "@ibbourne",
+                "date": "Tue Jun 02 09:13:24 +0000 2026",
+                "metrics": {
+                  "favorites": 0,
+                  "retweets": 0,
+                  "views": "4"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "ended_at": "2026-06-02T16:25:45"
+    }
+  ]
+}

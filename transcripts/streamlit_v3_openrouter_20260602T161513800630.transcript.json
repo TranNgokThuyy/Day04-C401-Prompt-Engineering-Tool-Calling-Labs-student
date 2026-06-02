@@ -1,0 +1,314 @@
+{
+  "transcript_id": "streamlit_v3_openrouter_20260602T161513800630",
+  "version": "v3",
+  "artifact_version": "v3+peb1c8179815b+t72256b6a6dde",
+  "prompt_hash": "eb1c8179815bd79d34de7d326420bb99b3072e6e8ae96464c02d4411f905fc68",
+  "tools_hash": "72256b6a6dde2c99a431450b9af309a4ed3c926d1684afa3d068cf59286d731e",
+  "provider": "openrouter",
+  "model": null,
+  "system_prompt": "C:\\Users\\Admin\\Desktop\\lab4\\Day04-C401-Prompt-Engineering-Tool-Calling-Labs-student\\starter_v0\\artifacts\\system_prompt.md",
+  "tools": "C:\\Users\\Admin\\Desktop\\lab4\\Day04-C401-Prompt-Engineering-Tool-Calling-Labs-student\\starter_v0\\artifacts\\tools.yaml",
+  "history_window": 5,
+  "max_tool_rounds": 4,
+  "created_at": "2026-06-02T16:15:13",
+  "updated_at": "2026-06-02T16:15:13",
+  "turns": [
+    {
+      "turn_index": 2,
+      "started_at": "2026-06-02T16:15:13",
+      "user": "Tìm thông tin về messi",
+      "status": "answered",
+      "assistant_text": "Here are the latest updates and news about Lionel Messi:\n\n### Recent News\n1. **Messi Injured Ahead of 2026 World Cup**  \n   Argentina forward Lionel Messi will miss the friendly against Honduras due to a minor injury but is expected to recover in time for the World Cup. [Read more here](https://www.telecomasia.net/news/football/messi-injured-ahead-of-2026-world-cup/).\n\n2. **Lionel Messi is in Argentina’s World Cup Squad**  \n   Argentina coach Lionel Scaloni confirmed that Messi will be part of the squad for the 2026 World Cup, despite concerns over injuries among players. [More details here](https://www.greenwichtime.com/sports/article/lionel-messi-is-in-argentina-s-world-cup-squad-22281557.php).\n\n3. **Messi to Represent Argentina at Sixth World Cup**  \n   Messi will captain Argentina in his sixth World Cup, making him one of the few players to achieve this milestone. [Learn more here](https://www.bbc.com/sport/football/articles/cr5p96l270ro).\n\n4. **Messi as the Face of World Cup Ads**  \n   Messi is featured in nearly a quarter of major World Cup advertising campaigns, highlighting his prominence in the tournament. [Read the article](https://www.adweek.com/brand-marketing/how-lionel-messi-became-the-face-of-1-in-4-world-cup-ads/).\n\n5. **Argentina Names Squad with Messi**  \n   The Argentine squad for the World Cup includes Messi and several new players compared to the previous tournament. [Check it out here](https://sports.yahoo.com/articles/messi-brazilian-argentina-name-squad-220300652.html).\n\n### Recent Tweets\n- **@anushiyaxx**: \"ஏன் messi சிலையை அகற்று றாங்க ? - india வில் நடந்த சம்பவத்தின் பின்னணி...\" [View Tweet](https://x.com/anushiyaxx/status/2061738219633537206).\n- **@Edward45251601**: \"You called him the goat 🐐 he should have done better than that...\" [View Tweet](https://x.com/Edward45251601/status/2061738216131031288).\n- **@CaptHomelander**: \"Maturity is realizing he is a better 'looking' player than Messi only...\" [View Tweet](https://x.com/CaptHomelander/status/2061738208635818386).\n- **@Diverland242**: \"Si tu dis que Messi ne t’a jamais fait vibrer c’est juste émotionnel...\" [View Tweet](https://x.com/Diverland242/status/2061738151811387486).\n- **@andresalejsg**: \"Sobretodo a Messi\" [View Tweet](https://x.com/andresalejsg/status/2061738151752704381).\n\nLet me know if you need more information!",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "lookup",
+              "args": {
+                "query": "Messi",
+                "topic": "news",
+                "timeframe": "week",
+                "max_results": 5
+              }
+            },
+            {
+              "name": "social_search",
+              "args": {
+                "query": "Messi",
+                "search_type": "Latest",
+                "limit": 5
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "lookup",
+              "args": {
+                "query": "Messi",
+                "topic": "news",
+                "timeframe": "week",
+                "max_results": 5
+              },
+              "result": {
+                "tool": "web_search",
+                "query": "Messi",
+                "topic": "news",
+                "timeframe": "week",
+                "items": [
+                  {
+                    "title": "Messi Injured Ahead of 2026 World Cup - Telecom Asia Sport",
+                    "url": "https://www.telecomasia.net/news/football/messi-injured-ahead-of-2026-world-cup/",
+                    "source": "telecomasia.net",
+                    "summary": "# Messi Injured Ahead of 2026 World Cup. **Argentina forward Lionel Messi will not play in the friendly against Honduras due to a minor injury. According to the source, Messi is experiencing minor physical issues and will therefore miss the friendly against Honduras scheduled for June 7. However, it is emphasized that his participation in the opening match of the World Cup against Algeria on June 17 is certain; the player will have time to recover in time for the start of the tournament. A few hours ago, Messi arrived at the national team's training camp and joined his teammates. Manchester City May Sign Aston Villa's Rogers36-Year-Old Swiss Josi Named Most Valuable Player of the 2026 IIHF World ChampionshipUruguay's 26-man Squad For The 2026 World Cup Announced. 1xBetFootballLionel MessiFIFA 2026 World Cup. Be the first to share what you think! Messi Injured Ahead of 2026 World Cup. Manchester City May Sign Aston Villa's Rogers. 36-Year-Old Swiss Josi Named Most Valuable Player of the 2026 IIHF World Championship.",
+                    "score": 0.98187524
+                  },
+                  {
+                    "title": "Lionel Messi is in Argentina’s World Cup squad as coach Scaloni calms injury fears - Greenwich Time",
+                    "url": "https://www.greenwichtime.com/sports/article/lionel-messi-is-in-argentina-s-world-cup-squad-22281557.php",
+                    "source": "greenwichtime.com",
+                    "summary": "# Lionel Messi is in Argentina’s World Cup squad as coach Scaloni calms injury fears. BUENOS AIRES (AP) — Amid a worrying rash of injuries, Argentina coach Lionel Scaloni sought to dispel doubts by confirming that most of the reigning world champions, including captain Lionel Messi, will be part of the squad that will seek a second consecutive title at the 2026 World Cup. Messi, about to turn 39, headlines the 26-man World Cup roster announced by the Argentine Football Association on Thursday. Several of those players were in doubt due to injuries of varying severity, close to the June 1 deadline set by FIFA for finalizing World Cup squads. Scaloni also included defender Cristian Romero, who is recovering from a sprained collateral ligament in his right knee suffered in mid-April while playing for Tottenham, and fullbacks Nahuel Molina and Gonzalo Montiel, who scored the decisive penalty kicks in the 2002 World Cup shootout against France, both of whom are recovering from muscle injuries.",
+                    "score": 0.9688562
+                  },
+                  {
+                    "title": "Messi to represent Argentina at sixth World Cup - BBC",
+                    "url": "https://www.bbc.com/sport/football/articles/cr5p96l270ro",
+                    "source": "bbc.com",
+                    "summary": "# Messi to represent Argentina at sixth World Cup. **Lionel Messi will play in a sixth World Cup as he captains holders Argentina at the 2026 tournament.**. The 38-year-old forward, who led his country to a third World Cup triumph in Qatar with a penalty shootout victory over France four years ago, was named in Lionel Scaloni's 26-man squad on Thursday. With 26 appearances, Messi holds the current record for the most World Cup matches by any player - and will join Portugal forward Cristiano Ronaldo, 41, as the only male players to appear in a sixth edition of football's biggest event this summer. Aston Villa's Emiliano Martinez, who was named the goalkeeper of the tournament in 2022, has been selected, as have defenders Lisandro Martinez and Cristian Romero from Manchester United and Tottenham respectively. ## Argentina World Cup squad.",
+                    "score": 0.9241418
+                  },
+                  {
+                    "title": "How Lionel Messi Became the Face of 1 in 4 World Cup Ads - ADWEEK",
+                    "url": "https://www.adweek.com/brand-marketing/how-lionel-messi-became-the-face-of-1-in-4-world-cup-ads/",
+                    "source": "adweek.com",
+                    "summary": "### World Cup. # How Lionel Messi Became the Face of 1 in 4 World Cup Ads. ## Soccer’s GOAT fronts campaigns from Adidas, Michelob Ultra, Lay’s, and more ahead of this year's tournament. Lionel Messi is a busy man. While his left foot has been preoccupied securing Inter Miami trophies and preparing to lead Argentina into the upcoming FIFA World Cup, his face is dominating advertising around the tournament. According to data provided to ADWEEK by audience measurement platform System1, Messi appears in 18 of the 80 major World Cup campaigns currently being tested across the U.S., U.K., and Argentina. The figures put Messi in nearly a quarter (22%) of the biggest World Cup campaigns so far, including ads from top-tier FIFA sponsors Adidas, Michelob Ultra, and Lay’s. Rebecca is Adweek's brand editor. #### Marketers on the Move: Hires and Promotions at OpenAI, CNN, Chloé and More. #### The Experience Is Now the Product.",
+                    "score": 0.8962514
+                  },
+                  {
+                    "title": "📋 With Messi and a 'Brazilian', Argentina name squad - Yahoo Sports",
+                    "url": "https://sports.yahoo.com/articles/messi-brazilian-argentina-name-squad-220300652.html",
+                    "source": "sports.yahoo.com",
+                    "summary": "# 📋 With Messi and a 'Brazilian' representative, Argentina name squad. At 38, Lionel Messi is indeed headed to the sixth World Cup of his career. The current world champion announced this Thursday (28) its 26-man squad for the World Cup in Canada, the United States, and Mexico. One of the highlights is the presence of Flaco López, Palmeiras’ top scorer. Medina, Barco, Musso, Balerdi, Lo Celso, Nico González, Paz, Simeone, and the aforementioned Flaco are new additions compared to the 2022 World Cup. The club with the most players is Atlético de Madrid. ## Check out the full list below:. 23-Dibu Martínez - Aston Villa. 1-Juan Musso - Atlético de Madrid. 26-Molina - Atlético de Madrid. 7-De Paul - Inter Miami. 9-Julián Álvarez - Atlético de Madrid. 15-Nico González - Atlético de Madrid. 16-Thiago Almada - Atlético de Madrid. 17-Giuliano Simeone - Atlético de Madrid. 22-Lautaro Martínez - Inter Milan. You can read the original version in 🇧🇷 here.*.",
+                    "score": 0.8933094
+                  }
+                ]
+              }
+            },
+            {
+              "tool": "social_search",
+              "args": {
+                "query": "Messi",
+                "search_type": "Latest",
+                "limit": 5
+              },
+              "result": {
+                "tool": "search_tweets",
+                "query": "Messi",
+                "search_type": "Latest",
+                "items": [
+                  {
+                    "title": "ஏன் messi சிலையை அகற்று றாங்க ? - india வில் நடந்த சம்பவத்தின் பின்னணி... https://t.co/XopbHzRwF1",
+                    "summary": "ஏன் messi சிலையை அகற்று றாங்க ? - india வில் நடந்த சம்பவத்தின் பின்னணி... https://t.co/XopbHzRwF1",
+                    "url": "https://x.com/anushiyaxx/status/2061738219633537206",
+                    "source": "@anushiyaxx",
+                    "date": "Tue Jun 02 09:14:31 +0000 2026",
+                    "metrics": {
+                      "favorites": 0,
+                      "retweets": 0,
+                      "views": null
+                    }
+                  },
+                  {
+                    "title": "@FootbalTimeX You called him the goat 🐐 he should have done better than that why you Messi fans always have smaller cycl",
+                    "summary": "@FootbalTimeX You called him the goat 🐐 he should have done better than that why you Messi fans always have smaller cycle of brain 🧠",
+                    "url": "https://x.com/Edward45251601/status/2061738216131031288",
+                    "source": "@Edward45251601",
+                    "date": "Tue Jun 02 09:14:30 +0000 2026",
+                    "metrics": {
+                      "favorites": 0,
+                      "retweets": 0,
+                      "views": "1"
+                    }
+                  },
+                  {
+                    "title": "@Eze_Wilberforce Maturity is realizing he is a better \"looking\" player than Messi only https://t.co/bDokEzvjqE",
+                    "summary": "@Eze_Wilberforce Maturity is realizing he is a better \"looking\" player than Messi only https://t.co/bDokEzvjqE",
+                    "url": "https://x.com/CaptHomelander/status/2061738208635818386",
+                    "source": "@CaptHomelander",
+                    "date": "Tue Jun 02 09:14:28 +0000 2026",
+                    "metrics": {
+                      "favorites": 0,
+                      "retweets": 0,
+                      "views": "1"
+                    }
+                  },
+                  {
+                    "title": "@WizardNani @NNielsinho @MessiahYaniss16 Si tu dis que Messi ne t’a jamais fait vibrer c’est juste émotionnel et non rat",
+                    "summary": "@WizardNani @NNielsinho @MessiahYaniss16 Si tu dis que Messi ne t’a jamais fait vibrer c’est juste émotionnel et non rationnel car pour quelqu’un qui regarde le foot et connais bien le palmarès de ce type t’aurais pas dit ça",
+                    "url": "https://x.com/Diverland242/status/2061738151811387486",
+                    "source": "@Diverland242",
+                    "date": "Tue Jun 02 09:14:15 +0000 2026",
+                    "metrics": {
+                      "favorites": 0,
+                      "retweets": 0,
+                      "views": null
+                    }
+                  },
+                  {
+                    "title": "@sudanalytics_ Sobretodo a Messi",
+                    "summary": "@sudanalytics_ Sobretodo a Messi",
+                    "url": "https://x.com/andresalejsg/status/2061738151752704381",
+                    "source": "@andresalejsg",
+                    "date": "Tue Jun 02 09:14:15 +0000 2026",
+                    "metrics": {
+                      "favorites": 0,
+                      "retweets": 0,
+                      "views": null
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": "Here are the latest updates and news about Lionel Messi:\n\n### Recent News\n1. **Messi Injured Ahead of 2026 World Cup**  \n   Argentina forward Lionel Messi will miss the friendly against Honduras due to a minor injury but is expected to recover in time for the World Cup. [Read more here](https://www.telecomasia.net/news/football/messi-injured-ahead-of-2026-world-cup/).\n\n2. **Lionel Messi is in Argentina’s World Cup Squad**  \n   Argentina coach Lionel Scaloni confirmed that Messi will be part of the squad for the 2026 World Cup, despite concerns over injuries among players. [More details here](https://www.greenwichtime.com/sports/article/lionel-messi-is-in-argentina-s-world-cup-squad-22281557.php).\n\n3. **Messi to Represent Argentina at Sixth World Cup**  \n   Messi will captain Argentina in his sixth World Cup, making him one of the few players to achieve this milestone. [Learn more here](https://www.bbc.com/sport/football/articles/cr5p96l270ro).\n\n4. **Messi as the Face of World Cup Ads**  \n   Messi is featured in nearly a quarter of major World Cup advertising campaigns, highlighting his prominence in the tournament. [Read the article](https://www.adweek.com/brand-marketing/how-lionel-messi-became-the-face-of-1-in-4-world-cup-ads/).\n\n5. **Argentina Names Squad with Messi**  \n   The Argentine squad for the World Cup includes Messi and several new players compared to the previous tournament. [Check it out here](https://sports.yahoo.com/articles/messi-brazilian-argentina-name-squad-220300652.html).\n\n### Recent Tweets\n- **@anushiyaxx**: \"ஏன் messi சிலையை அகற்று றாங்க ? - india வில் நடந்த சம்பவத்தின் பின்னணி...\" [View Tweet](https://x.com/anushiyaxx/status/2061738219633537206).\n- **@Edward45251601**: \"You called him the goat 🐐 he should have done better than that...\" [View Tweet](https://x.com/Edward45251601/status/2061738216131031288).\n- **@CaptHomelander**: \"Maturity is realizing he is a better 'looking' player than Messi only...\" [View Tweet](https://x.com/CaptHomelander/status/2061738208635818386).\n- **@Diverland242**: \"Si tu dis que Messi ne t’a jamais fait vibrer c’est juste émotionnel...\" [View Tweet](https://x.com/Diverland242/status/2061738151811387486).\n- **@andresalejsg**: \"Sobretodo a Messi\" [View Tweet](https://x.com/andresalejsg/status/2061738151752704381).\n\nLet me know if you need more information!",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "lookup",
+          "args": {
+            "query": "Messi",
+            "topic": "news",
+            "timeframe": "week",
+            "max_results": 5
+          },
+          "result": {
+            "tool": "web_search",
+            "query": "Messi",
+            "topic": "news",
+            "timeframe": "week",
+            "items": [
+              {
+                "title": "Messi Injured Ahead of 2026 World Cup - Telecom Asia Sport",
+                "url": "https://www.telecomasia.net/news/football/messi-injured-ahead-of-2026-world-cup/",
+                "source": "telecomasia.net",
+                "summary": "# Messi Injured Ahead of 2026 World Cup. **Argentina forward Lionel Messi will not play in the friendly against Honduras due to a minor injury. According to the source, Messi is experiencing minor physical issues and will therefore miss the friendly against Honduras scheduled for June 7. However, it is emphasized that his participation in the opening match of the World Cup against Algeria on June 17 is certain; the player will have time to recover in time for the start of the tournament. A few hours ago, Messi arrived at the national team's training camp and joined his teammates. Manchester City May Sign Aston Villa's Rogers36-Year-Old Swiss Josi Named Most Valuable Player of the 2026 IIHF World ChampionshipUruguay's 26-man Squad For The 2026 World Cup Announced. 1xBetFootballLionel MessiFIFA 2026 World Cup. Be the first to share what you think! Messi Injured Ahead of 2026 World Cup. Manchester City May Sign Aston Villa's Rogers. 36-Year-Old Swiss Josi Named Most Valuable Player of the 2026 IIHF World Championship.",
+                "score": 0.98187524
+              },
+              {
+                "title": "Lionel Messi is in Argentina’s World Cup squad as coach Scaloni calms injury fears - Greenwich Time",
+                "url": "https://www.greenwichtime.com/sports/article/lionel-messi-is-in-argentina-s-world-cup-squad-22281557.php",
+                "source": "greenwichtime.com",
+                "summary": "# Lionel Messi is in Argentina’s World Cup squad as coach Scaloni calms injury fears. BUENOS AIRES (AP) — Amid a worrying rash of injuries, Argentina coach Lionel Scaloni sought to dispel doubts by confirming that most of the reigning world champions, including captain Lionel Messi, will be part of the squad that will seek a second consecutive title at the 2026 World Cup. Messi, about to turn 39, headlines the 26-man World Cup roster announced by the Argentine Football Association on Thursday. Several of those players were in doubt due to injuries of varying severity, close to the June 1 deadline set by FIFA for finalizing World Cup squads. Scaloni also included defender Cristian Romero, who is recovering from a sprained collateral ligament in his right knee suffered in mid-April while playing for Tottenham, and fullbacks Nahuel Molina and Gonzalo Montiel, who scored the decisive penalty kicks in the 2002 World Cup shootout against France, both of whom are recovering from muscle injuries.",
+                "score": 0.9688562
+              },
+              {
+                "title": "Messi to represent Argentina at sixth World Cup - BBC",
+                "url": "https://www.bbc.com/sport/football/articles/cr5p96l270ro",
+                "source": "bbc.com",
+                "summary": "# Messi to represent Argentina at sixth World Cup. **Lionel Messi will play in a sixth World Cup as he captains holders Argentina at the 2026 tournament.**. The 38-year-old forward, who led his country to a third World Cup triumph in Qatar with a penalty shootout victory over France four years ago, was named in Lionel Scaloni's 26-man squad on Thursday. With 26 appearances, Messi holds the current record for the most World Cup matches by any player - and will join Portugal forward Cristiano Ronaldo, 41, as the only male players to appear in a sixth edition of football's biggest event this summer. Aston Villa's Emiliano Martinez, who was named the goalkeeper of the tournament in 2022, has been selected, as have defenders Lisandro Martinez and Cristian Romero from Manchester United and Tottenham respectively. ## Argentina World Cup squad.",
+                "score": 0.9241418
+              },
+              {
+                "title": "How Lionel Messi Became the Face of 1 in 4 World Cup Ads - ADWEEK",
+                "url": "https://www.adweek.com/brand-marketing/how-lionel-messi-became-the-face-of-1-in-4-world-cup-ads/",
+                "source": "adweek.com",
+                "summary": "### World Cup. # How Lionel Messi Became the Face of 1 in 4 World Cup Ads. ## Soccer’s GOAT fronts campaigns from Adidas, Michelob Ultra, Lay’s, and more ahead of this year's tournament. Lionel Messi is a busy man. While his left foot has been preoccupied securing Inter Miami trophies and preparing to lead Argentina into the upcoming FIFA World Cup, his face is dominating advertising around the tournament. According to data provided to ADWEEK by audience measurement platform System1, Messi appears in 18 of the 80 major World Cup campaigns currently being tested across the U.S., U.K., and Argentina. The figures put Messi in nearly a quarter (22%) of the biggest World Cup campaigns so far, including ads from top-tier FIFA sponsors Adidas, Michelob Ultra, and Lay’s. Rebecca is Adweek's brand editor. #### Marketers on the Move: Hires and Promotions at OpenAI, CNN, Chloé and More. #### The Experience Is Now the Product.",
+                "score": 0.8962514
+              },
+              {
+                "title": "📋 With Messi and a 'Brazilian', Argentina name squad - Yahoo Sports",
+                "url": "https://sports.yahoo.com/articles/messi-brazilian-argentina-name-squad-220300652.html",
+                "source": "sports.yahoo.com",
+                "summary": "# 📋 With Messi and a 'Brazilian' representative, Argentina name squad. At 38, Lionel Messi is indeed headed to the sixth World Cup of his career. The current world champion announced this Thursday (28) its 26-man squad for the World Cup in Canada, the United States, and Mexico. One of the highlights is the presence of Flaco López, Palmeiras’ top scorer. Medina, Barco, Musso, Balerdi, Lo Celso, Nico González, Paz, Simeone, and the aforementioned Flaco are new additions compared to the 2022 World Cup. The club with the most players is Atlético de Madrid. ## Check out the full list below:. 23-Dibu Martínez - Aston Villa. 1-Juan Musso - Atlético de Madrid. 26-Molina - Atlético de Madrid. 7-De Paul - Inter Miami. 9-Julián Álvarez - Atlético de Madrid. 15-Nico González - Atlético de Madrid. 16-Thiago Almada - Atlético de Madrid. 17-Giuliano Simeone - Atlético de Madrid. 22-Lautaro Martínez - Inter Milan. You can read the original version in 🇧🇷 here.*.",
+                "score": 0.8933094
+              }
+            ]
+          }
+        },
+        {
+          "tool": "social_search",
+          "args": {
+            "query": "Messi",
+            "search_type": "Latest",
+            "limit": 5
+          },
+          "result": {
+            "tool": "search_tweets",
+            "query": "Messi",
+            "search_type": "Latest",
+            "items": [
+              {
+                "title": "ஏன் messi சிலையை அகற்று றாங்க ? - india வில் நடந்த சம்பவத்தின் பின்னணி... https://t.co/XopbHzRwF1",
+                "summary": "ஏன் messi சிலையை அகற்று றாங்க ? - india வில் நடந்த சம்பவத்தின் பின்னணி... https://t.co/XopbHzRwF1",
+                "url": "https://x.com/anushiyaxx/status/2061738219633537206",
+                "source": "@anushiyaxx",
+                "date": "Tue Jun 02 09:14:31 +0000 2026",
+                "metrics": {
+                  "favorites": 0,
+                  "retweets": 0,
+                  "views": null
+                }
+              },
+              {
+                "title": "@FootbalTimeX You called him the goat 🐐 he should have done better than that why you Messi fans always have smaller cycl",
+                "summary": "@FootbalTimeX You called him the goat 🐐 he should have done better than that why you Messi fans always have smaller cycle of brain 🧠",
+                "url": "https://x.com/Edward45251601/status/2061738216131031288",
+                "source": "@Edward45251601",
+                "date": "Tue Jun 02 09:14:30 +0000 2026",
+                "metrics": {
+                  "favorites": 0,
+                  "retweets": 0,
+                  "views": "1"
+                }
+              },
+              {
+                "title": "@Eze_Wilberforce Maturity is realizing he is a better \"looking\" player than Messi only https://t.co/bDokEzvjqE",
+                "summary": "@Eze_Wilberforce Maturity is realizing he is a better \"looking\" player than Messi only https://t.co/bDokEzvjqE",
+                "url": "https://x.com/CaptHomelander/status/2061738208635818386",
+                "source": "@CaptHomelander",
+                "date": "Tue Jun 02 09:14:28 +0000 2026",
+                "metrics": {
+                  "favorites": 0,
+                  "retweets": 0,
+                  "views": "1"
+                }
+              },
+              {
+                "title": "@WizardNani @NNielsinho @MessiahYaniss16 Si tu dis que Messi ne t’a jamais fait vibrer c’est juste émotionnel et non rat",
+                "summary": "@WizardNani @NNielsinho @MessiahYaniss16 Si tu dis que Messi ne t’a jamais fait vibrer c’est juste émotionnel et non rationnel car pour quelqu’un qui regarde le foot et connais bien le palmarès de ce type t’aurais pas dit ça",
+                "url": "https://x.com/Diverland242/status/2061738151811387486",
+                "source": "@Diverland242",
+                "date": "Tue Jun 02 09:14:15 +0000 2026",
+                "metrics": {
+                  "favorites": 0,
+                  "retweets": 0,
+                  "views": null
+                }
+              },
+              {
+                "title": "@sudanalytics_ Sobretodo a Messi",
+                "summary": "@sudanalytics_ Sobretodo a Messi",
+                "url": "https://x.com/andresalejsg/status/2061738151752704381",
+                "source": "@andresalejsg",
+                "date": "Tue Jun 02 09:14:15 +0000 2026",
+                "metrics": {
+                  "favorites": 0,
+                  "retweets": 0,
+                  "views": null
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "ended_at": "2026-06-02T16:15:13"
+    }
+  ]
+}

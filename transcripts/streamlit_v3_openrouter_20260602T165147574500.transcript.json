@@ -1,0 +1,125 @@
+{
+  "transcript_id": "streamlit_v3_openrouter_20260602T165147574500",
+  "version": "v3",
+  "artifact_version": "v3+peb1c8179815b+t72256b6a6dde",
+  "prompt_hash": "eb1c8179815bd79d34de7d326420bb99b3072e6e8ae96464c02d4411f905fc68",
+  "tools_hash": "72256b6a6dde2c99a431450b9af309a4ed3c926d1684afa3d068cf59286d731e",
+  "provider": "openrouter",
+  "model": null,
+  "system_prompt": "C:\\Users\\Admin\\Desktop\\lab4\\Day04-C401-Prompt-Engineering-Tool-Calling-Labs-student\\starter_v0\\artifacts\\system_prompt.md",
+  "tools": "C:\\Users\\Admin\\Desktop\\lab4\\Day04-C401-Prompt-Engineering-Tool-Calling-Labs-student\\starter_v0\\artifacts\\tools.yaml",
+  "history_window": 5,
+  "max_tool_rounds": 4,
+  "created_at": "2026-06-02T16:51:47",
+  "updated_at": "2026-06-02T16:51:47",
+  "turns": [
+    {
+      "turn_index": 1,
+      "started_at": "2026-06-02T16:51:47",
+      "user": "tìm các bài báo của vnexpress",
+      "status": "answered",
+      "assistant_text": "I am still encountering an error while trying to retrieve articles from VnExpress. Unfortunately, it seems that the search API is not responding correctly at the moment. \n\nIf you need specific articles or topics from VnExpress, I recommend checking their website directly at [vnexpress.net](https://vnexpress.net). If there's anything else you need, feel free to let me know!",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "lookup",
+              "args": {
+                "query": "site:vnexpress.net",
+                "topic": "news",
+                "timeframe": "week",
+                "max_results": 5
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "lookup",
+              "args": {
+                "query": "site:vnexpress.net",
+                "topic": "news",
+                "timeframe": "week",
+                "max_results": 5
+              },
+              "result": {
+                "tool": "web_search",
+                "error": "HTTPError",
+                "message": "400 Client Error: Bad Request for url: https://api.tavily.com/search"
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": "I encountered an error while trying to retrieve articles from VnExpress. It seems there was a bad request to the search API. I will attempt to fetch the articles again. \n\nLet me try that for you.",
+          "tool_calls": [
+            {
+              "name": "lookup",
+              "args": {
+                "query": "site:vnexpress.net",
+                "topic": "news",
+                "timeframe": "week",
+                "max_results": 5
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "lookup",
+              "args": {
+                "query": "site:vnexpress.net",
+                "topic": "news",
+                "timeframe": "week",
+                "max_results": 5
+              },
+              "result": {
+                "tool": "web_search",
+                "error": "HTTPError",
+                "message": "400 Client Error: Bad Request for url: https://api.tavily.com/search"
+              }
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "assistant_text": "I am still encountering an error while trying to retrieve articles from VnExpress. Unfortunately, it seems that the search API is not responding correctly at the moment. \n\nIf you need specific articles or topics from VnExpress, I recommend checking their website directly at [vnexpress.net](https://vnexpress.net). If there's anything else you need, feel free to let me know!",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "lookup",
+          "args": {
+            "query": "site:vnexpress.net",
+            "topic": "news",
+            "timeframe": "week",
+            "max_results": 5
+          },
+          "result": {
+            "tool": "web_search",
+            "error": "HTTPError",
+            "message": "400 Client Error: Bad Request for url: https://api.tavily.com/search"
+          }
+        },
+        {
+          "tool": "lookup",
+          "args": {
+            "query": "site:vnexpress.net",
+            "topic": "news",
+            "timeframe": "week",
+            "max_results": 5
+          },
+          "result": {
+            "tool": "web_search",
+            "error": "HTTPError",
+            "message": "400 Client Error: Bad Request for url: https://api.tavily.com/search"
+          }
+        }
+      ],
+      "ended_at": "2026-06-02T16:51:47"
+    }
+  ]
+}
