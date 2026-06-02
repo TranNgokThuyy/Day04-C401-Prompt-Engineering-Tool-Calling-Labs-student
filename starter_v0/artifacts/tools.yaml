@@ -142,3 +142,29 @@ tools:
       properties:
         url: {type: string, default: "", description: "URL cần xem trước"}
       required: [url]
+
+  - name: sentiment
+    description: "Đánh giá xu hướng tích cực/trung tính/tiêu cực của văn bản."
+    parameters:
+      type: object
+      properties:
+        text: {type: string, default: "", description: "Văn bản cần phân tích"}
+      required: [text]
+
+  - name: source_inspect
+    description: "Khám phá siêu dữ liệu và tình trạng một trang web."
+    parameters:
+      type: object
+      properties:
+        url: {type: string, default: "", description: "URL cần kiểm tra"}
+      required: [url]
+
+  - name: trend_analysis
+    description: "Tìm chủ đề nổi bật và xu hướng từ một tập văn bản."
+    parameters:
+      type: object
+      properties:
+        texts: {type: array, default: [], items: {type: string}, description: "Danh sách đoạn văn để phân tích"}
+        focus_topic: {type: string, default: "", description: "Chủ đề cần ưu tiên"}
+        top_k: {type: integer, default: 5, description: "Số chủ đề hàng đầu"}
+      required: [texts]

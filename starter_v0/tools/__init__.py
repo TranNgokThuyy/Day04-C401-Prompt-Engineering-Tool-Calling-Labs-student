@@ -20,6 +20,9 @@ from .summarize.tool import summarize_text
 from .keywords.tool import extract_keywords
 from .url_preview.tool import preview_url
 from .lookup.tool import web_search
+from .sentiment.tool import sentiment
+from .source_inspect.tool import source_inspect
+from .trend_analysis.tool import trend_analysis
 
 
 # NOTE (starter_v0): tool names here are intentionally vague. These keys are the
@@ -41,6 +44,9 @@ TOOL_FUNCTIONS = {
     "summarize": summarize_text,
     "keywords": extract_keywords,
     "url_preview": preview_url,
+    "sentiment": sentiment,
+    "source_inspect": source_inspect,
+    "trend_analysis": trend_analysis,
 }
 
 
